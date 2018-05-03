@@ -29,47 +29,4 @@ p    {color: red;}
         height: 480,
         channel: "masterofmasters79"
       });
-</script>
-
-    <script>
-    ;(function() {
-  'use strict'
-
-  function colorClock() {
-    // Get RGB channels from a date
-    function RGBFromDate(date) {
-      return [
-        date.getHours() / 24 * 255,
-        date.getMinutes() / 60 * 255,
-        date.getSeconds() / 60 * 255
-      ].map(function(e) {
-        return Math.round(e)
-      })
-    }
-
-    // Get color luminance as a float from RGB channels
-    function colorLuminance(red, green, blue) {
-      return (0.299 * red + 0.587 * green + 0.114 * blue) / 256
-    }
-
-    // Get font color from RGB channels from background
-    function colorFromRGB(red, green, blue) {
-      return colorLuminance(red, green, blue) > 0.7 ? 'black' : 'white'
-    }
-
-    // Get formatted date
-    function dateToContent(date) {
-      return date.toTimeString().replace(/.*(\d{2}:\d{2}:\d{2}).*/, '$1')
-    }
-
-    var date = new Date()
-    var channels = RGBFromDate(date)
-
-    document.body.style.color = colorFromRGB.apply(this, channels)
-    document.body.style.backgroundColor = 'rgb(' + channels.join(',') + ')'
-    document.body.innerHTML = dateToContent(date)
-  }
-
-  var t = setInterval(colorClock, 1000)
-})()
     </script>
