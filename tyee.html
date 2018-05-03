@@ -11,7 +11,27 @@ p    {color: red;}
 }
 </style>
     <h4> US Central Time </h4>
-<script>
+
+<marquee direction="left" scrollamount="25" behavior="scroll" style="width: 1300px; height: 150px; color: #00ffaa; font-size: 100px; font-family: Palatino Linotype; text-decoration: blink; background-color: #000000;">Tyee is SUPERIOR!!!</marquee>
+<marquee direction="left" scrollamount="25" behavior="scroll" style="width: 1300px; height: 150px; color: #ff0000; font-size: 100px; font-family: Palatino Linotype; text-decoration: blink; background-color: #000000;">Emma Watson is TRASH, Plz avoid!!!</marquee>
+<marquee direction="left" scrollamount="25" behavior="scroll" style="width: 1300px; height: 120px; color: #ff9900; font-size: 100px; font-family: Palatino Linotype; text-decoration: blink; background-color: #000000;">Max needs to fight me in MORTAL KOMBAT!!!</marquee>
+
+    <!-- Add a placeholder for the Twitch embed -->
+    <div id="twitch-embed"></div>
+
+    <!-- Load the Twitch embed script -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
+
+    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: 854,
+        height: 480,
+        channel: "masterofmasters79"
+      });
+</script>
+
+    <script>
     ;(function() {
   'use strict'
 
@@ -47,28 +67,9 @@ p    {color: red;}
 
     document.body.style.color = colorFromRGB.apply(this, channels)
     document.body.style.backgroundColor = 'rgb(' + channels.join(',') + ')'
-    object.style.backgroundSize = 75 75
     document.body.innerHTML = dateToContent(date)
   }
 
   var t = setInterval(colorClock, 1000)
 })()
     </script>
-<marquee direction="left" scrollamount="25" behavior="scroll" style="width: 1300px; height: 150px; color: #00ffaa; font-size: 100px; font-family: Palatino Linotype; text-decoration: blink; background-color: #000000;">Tyee is SUPERIOR!!!</marquee>
-<marquee direction="left" scrollamount="25" behavior="scroll" style="width: 1300px; height: 150px; color: #ff0000; font-size: 100px; font-family: Palatino Linotype; text-decoration: blink; background-color: #000000;">Emma Watson is TRASH, Plz avoid!!!</marquee>
-<marquee direction="left" scrollamount="25" behavior="scroll" style="width: 1300px; height: 120px; color: #ff9900; font-size: 100px; font-family: Palatino Linotype; text-decoration: blink; background-color: #000000;">Max needs to fight me in MORTAL KOMBAT!!!</marquee>
-
-    <!-- Add a placeholder for the Twitch embed -->
-    <div id="twitch-embed"></div>
-
-    <!-- Load the Twitch embed script -->
-    <script src="https://embed.twitch.tv/embed/v1.js"></script>
-
-    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" root element. -->
-    <script type="text/javascript">
-      new Twitch.Embed("twitch-embed", {
-        width: 854,
-        height: 480,
-        channel: "masterofmasters79"
-      });
-</script>
