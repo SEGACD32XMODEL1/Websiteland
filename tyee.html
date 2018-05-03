@@ -10,6 +10,7 @@ function startTime() {
     m = checkTime(m);
     s = checkTime(s);
     document.getElementById('txt').innerHTML =
+    document.write("<p>Fontsize: " + txt.fontsize(6) + "</p>");
     h + ":" + m + ":" + s;
     var t = setTimeout(startTime, 500);
 }
