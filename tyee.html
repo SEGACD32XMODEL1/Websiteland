@@ -8,7 +8,6 @@ p    {color: red;}
         div {
     height: 100px;
     width: 500px;
-    background-color: powderblue;
 }
 </style>
     <h4> US Central Time </h4>
@@ -48,6 +47,7 @@ p    {color: red;}
 
     document.body.style.color = colorFromRGB.apply(this, channels)
     document.body.style.backgroundColor = 'rgb(' + channels.join(',') + ')'
+    document.body.style.backgroundSize = 75 75
     document.body.innerHTML = dateToContent(date)
   }
 
