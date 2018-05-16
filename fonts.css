@@ -23,3 +23,8 @@
   font-family: "cowboy";
     src: url("../Submit/Ol' Cowboy DEMO.ttf") format("truetype");
 } 
+
+@font-face {
+  font-family: "zilap";
+    src: url("../Submit/Zilap Monograma DEMO.ttf") format("truetype");
+}
