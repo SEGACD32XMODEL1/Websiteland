@@ -1,0 +1,25 @@
+@font-face {
+  font-family: "Kimberley";
+    src: url("../Submit/kimberle.ttf") format("truetype");
+}
+@font-face {
+  font-family: "LemonMilk";
+    src: url("../Submit/LemonMilk.ttf") format("truetype");
+}
+@font-face {
+  font-family: "rc";
+    src: url("../Submit/R&C-Demo.otf") format("opentype");
+}
+@font-face {
+  font-family: "ks2";
+    src: url("../Submit/KhadijaDisplay2.otf") format("opentype");
+}
+@font-face {
+  font-family: "baron";
+    src: url("../Submit/Baron Neue.otf") format("opentype");
+}
+  
+ @font-face {
+  font-family: "cowboy";
+    src: url("../Submit/Ol' Cowboy DEMO.ttf") format("truetype");
+} 
