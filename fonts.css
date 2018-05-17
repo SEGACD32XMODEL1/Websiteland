@@ -28,3 +28,8 @@
   font-family: "zilap";
     src: url("../Submit/Zilap Monograma DEMO.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "wages";
+  src: url("../Submit/LOSTWAGE.TTF") format("truetype");
+}
