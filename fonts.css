@@ -33,3 +33,8 @@
   font-family: "wages";
   src: url("../Websiteland/LOSTWAGE.TTF") format("truetype");
 }
+
+@font-face {
+  font-family: "riesling";
+  src: url("../Websiteland/riesling.ttf") format("truetype");
+}
