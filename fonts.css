@@ -1,35 +1,35 @@
 @font-face {
   font-family: "Kimberley";
-    src: url("../Submit/kimberle.ttf") format("truetype");
+    src: url("../Websiteland/kimberle.ttf") format("truetype");
 }
 @font-face {
   font-family: "LemonMilk";
-    src: url("../Submit/LemonMilk.ttf") format("truetype");
+    src: url("../Websiteland/LemonMilk.ttf") format("truetype");
 }
 @font-face {
   font-family: "rc";
-    src: url("../Submit/R&C-Demo.otf") format("opentype");
+    src: url("../Websiteland/R&C-Demo.otf") format("opentype");
 }
 @font-face {
   font-family: "ks2";
-    src: url("../Submit/KhadijaDisplay2.otf") format("opentype");
+    src: url("../Websiteland/KhadijaDisplay2.otf") format("opentype");
 }
 @font-face {
   font-family: "baron";
-    src: url("../Submit/Baron Neue.otf") format("opentype");
+    src: url("../Websiteland/Baron Neue.otf") format("opentype");
 }
   
  @font-face {
   font-family: "cowboy";
-    src: url("../Submit/Ol' Cowboy DEMO.ttf") format("truetype");
+    src: url("../Websiteland/Ol' Cowboy DEMO.ttf") format("truetype");
 } 
 
 @font-face {
   font-family: "zilap";
-    src: url("../Submit/Zilap Monograma DEMO.ttf") format("truetype");
+    src: url("../Websiteland/Zilap Monograma DEMO.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "wages";
-  src: url("../Submit/LOSTWAGE.TTF") format("truetype");
+  src: url("../Websiteland/LOSTWAGE.TTF") format("truetype");
 }
