@@ -26,6 +26,10 @@ Websiteland
 
 <div id="links" style="text-align:center;margin:auto;color:#888888;font-size:40px;font-weight:bold">
 
+<audio>
+    <source src="../Websiteland/blackandland7seconds" type="video/mpeg">
+    </audio>
+    
 <a href="https://robocop79.github.io/Websiteland/Roastedbeef420.html"> Roasted Beef 420 </a>
   
 <a href="https://robocop79.github.io/Websiteland/main.html">Main Page</a>  
@@ -37,3 +41,15 @@ Websiteland
 <a href="https://robocop79.github.io/Websiteland/index.html">Reload</a>
 
 </div>
+
+<script>
+    $(".links").mouseenter(function () {
+     var curAudio = $(this).find('audio');
+     var allAudio = $('.sound');
+     $.each(allAudio,function(ind,val){  
+         $(this).get(0).pause();
+         $(this).get(0).currentTime = 0;   
+    });
+     curAudio.get(0).play();
+});
+    </script>
