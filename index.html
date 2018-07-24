@@ -41,14 +41,11 @@ Websiteland
     </audio>
 
 <script>
-    $(".trigger").mouseenter(function () {
-     var curAudio = $(this).find('audio');
-     var allAudio = $('.sound');
-     $.each(allAudio,function(ind,val){  
-         $(this).get(0).pause();
-         $(this).get(0).currentTime = 0;   
-    });
-     curAudio.get(0).play();
-});
+
+   document.getElementById('myTextId').onmouseover = function() {
+var audio = new Audio('../Websiteland/');
+audio.play();
+};
+
     </script>
 </div>
