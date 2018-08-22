@@ -1,0 +1,12 @@
+<ul id="ticker01">
+	<li><span>8/25/1985</span><a href="#">LoLz</a></li>
+	<li><span>10/15/1995</span><a href="#">You End up doing is Pointless</a></li>
+	<li><span>4/3/2007</span><a href="#">Plz stop or at least visit RoastedBeef420</a></li>
+	<!-- eccetera -->
+</ul>
+
+<script>
+$(function(){
+	$("ul#ticker01").liScroll({travelocity: 0.15});
+});
+</script>
