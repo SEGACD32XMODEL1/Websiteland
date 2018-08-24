@@ -38,3 +38,8 @@
   font-family: "riesling";
   src: url("../Websiteland/riesling.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "oreos";
+  src: url("../Websiteland/Oreos.ttf") format("truetype");
+}
