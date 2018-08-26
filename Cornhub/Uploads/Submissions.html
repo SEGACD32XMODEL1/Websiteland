@@ -1,14 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>File Upload with PHP</title>
-</head>
-<body>
-    <form action="fileUpload.php" method="post" enctype="multipart/form-data">
-        Upload a File:
-        <input type="file" name="myfile" id="fileToUpload">
-        <input type="submit" name="submit" value="Upload File Now" >
-    </form>
-</body>
-</html>
+<!-- Paste this into forms.html -->
+
+<!-- Text input fields -->
+<input id="name" type="text" placeholder="Your Name">
+<input id="email" type="email" placeholder="Your Email">
+<!-- File upload button -->
+<input id="file" type="file">
+<!-- Form submit button -->
+<button onclick="submit(); return false;">Submit</button>
+<!-- Show Progress -->
+<div id="progress"></div>
+<!-- Add the jQuery library -->
+<script src="https://code.jquery.com/jquery.min.js"></script>
+
+<script>
+
+  var file, 
+      reader = new FileReader();
+
+  // Upload the file to Google Drive
+  reader.onloadend = function(e) {
+    google.script.run
+      .withSuccessHandler(showMessage)
+      .uploadFileToGoogleDrive(
+         e.target.result, file.name, 
+         $('input#name').val(), 
+         $('input#email').val()
+      );
+  };
+
+  // Read the file on form submit
+  function submitForm() {
+    file = $('#file')[0].files[0];
+    showMessage("Uploading file..");
+    reader.readAsDataURL(file);
+  }
+
+  function showMessage(e) {
+    $('#progress').html(e);
+  }
+
+</script>
