@@ -2,14 +2,62 @@
 @import "../Websiteland/fonts.css";
 </style>
 
-<head>
+<style> 
+  h1,h2{
+  text-align:left;
+}
+h1{
+  color:rgba(100, 50, 255, .8);
+}
+.rainbow {
+   /* Chrome, Safari, Opera */
+  -webkit-animation: rainbow 3s infinite; 
+  
+  /* Internet Explorer */
+  -ms-animation: rainbow 3s infinite;
+  
+  /* Standar Syntax */
+  animation: rainbow 3s infinite; 
+}
+/* Chrome, Safari, Opera */
+@-webkit-keyframes rainbow{
+  0%{color: orange;}	
+  10%{color: purple;}	
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	95%{color: blue;}
+	100%{color: white;}	
+}
+/* Internet Explorer */
+@-ms-keyframes rainbow{
+  0%{color: orange;}	
+  10%{color: purple;}	
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	95%{color: blue;}
+	100%{color: white;}	
+}
+/* Standard Syntax */
+@keyframes rainbow{
+  0%{color: orange;}	
+  10%{color: purple;}	
+	20%{color: red;}
+	40%{color: yellow;}
+	60%{color: green;}
+	95%{color: blue;}
+	100%{color: white;}
+}
+  </style> 
+
 <style>
 #grad1 {
     height: 100px;
     background: red;
     background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
 }
-    #trigger {
+    .trigger {
  height:1000px;
    width:1000px
  border:1px solid black;
@@ -18,23 +66,22 @@
  background: repeating-radial-gradient(at center, black 10%, yellow 20%);
  }
 </style>
-</head>
 
-<div id="grad1" style="text-align:center;margin:auto;color:#888888;font-size:40px;font-weight:bold">
+<div id="grad1" class="rainbow" style="text-align:center;margin:auto;color:#888888;font-size:40px;font-weight:bold;font-family:oreos;">
 Websiteland
 </div>
 
-<a href="https://robocop79.github.io/Websiteland/Roastedbeef420.html">Roasted Beef 420</a>
+<a href="https://robocop79.github.io/Websiteland/Roastedbeef420.html" class="rainbow" style="font-family:oreos;">Roasted Beef 420</a>
 
-<a href="https://robocop79.github.io/Websiteland/main.html">Main Page</a>  
+<a href="https://robocop79.github.io/Websiteland/main.html" class="rainbow" style="font-family:oreos;">Main Page</a>  
 
-<a href="https://robocop79.github.io/Websiteland/Cornhub/Cornhub.html">Cornhub</a>
+<a href="https://robocop79.github.io/Websiteland/Cornhub/Cornhub.html" class="rainbow" style="font-family:oreos;">Cornhub</a>
 
-<a href="https://robocop79.github.io/Websiteland/Time.html">Time</a>  
+<a href="https://robocop79.github.io/Websiteland/Time.html" class="rainbow" style="font-family:oreos;">Time</a>  
 
-<a href="https://robocop79.github.io/Websiteland/index.html">Reload</a>
+<a href="https://robocop79.github.io/Websiteland/index.html" class="rainbow" style="font-family:oreos;">Reload</a>
 
-<a href="https://robocop79.github.io/Websiteland/English2vocab.html">Vocabulary English 2</a>
+<a href="https://robocop79.github.io/Websiteland/English2vocab.html" class="rainbow" style="font-family:oreos;">Vocabulary English 2</a>
 
 <div class="trigger" style="text-align:center;margin:auto;color:#888888;font-size:40px;font-weight:bold;">
 
