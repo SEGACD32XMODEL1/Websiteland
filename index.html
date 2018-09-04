@@ -85,17 +85,18 @@ Websiteland <br>
     <audio preload="auto" id="bay" src="../Websiteland/blackandyellow7seconds.mp3" type="audio/mp3"></audio>
 
 		<script>
-		$("#trigger a").each(function(i) {
+		$("#grad1 a").each(function(i) {
   if (i != 0) {
-    var clonedaudio = $("#bay").parent()
-      .clone()
-      .appendTo($(this).parent());
-
-    $(this).mouseenter(function() {
-      clonedaudio[0].play();
-    });
+    $("#bay").parent()
+    .clone()
+    .attr("id", "bay" + i)
+    .appendTo($(this).parent());
   }
+  $(this).data("bay", i);
 })
+.mouseenter(function() {
+  $("#bay" + $(this).data("bay"))[0].play();
+});
 		</script>
 	    
 	    <style>
