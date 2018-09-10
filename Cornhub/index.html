@@ -1,55 +1,46 @@
 <link href="https://fonts.googleapis.com/css?family=Monoton|Sonsie+One" rel="stylesheet">
 
-<h4 class="rainbow" style="color:white; font-family:oreos;">Please Claim 100th Visitor Title in Hall of Fame Comment Box & Upload Corn Media!!!<h4>
+<h4 class="website_title mega" style="color:white; font-family:oreos;">Please Claim 100th Visitor Title in Hall of Fame Comment Box & Upload Corn Media!!!<h4>
 
  <style> 
-  h1,h2{
-  text-align:left;
-}
-h1{
-  color:rgba(100, 50, 255, .8);
-}
-.rainbow {
-   /* Chrome, Safari, Opera */
-  -webkit-animation: rainbow 3s infinite; 
-  
-  /* Internet Explorer */
-  -ms-animation: rainbow 3s infinite;
-  
-  /* Standar Syntax */
-  animation: rainbow 3s infinite; 
+  /*-----------------------------------*\
+  $HEADER
+\*-----------------------------------*/
+
+.site__header {
+  -webkit-animation: bounceInUp 1s;
 }
 
-/* Chrome, Safari, Opera */
-@-webkit-keyframes rainbow{
-  0%{color: orange;}	
-  10%{color: purple;}	
-	20%{color: red;}
-	40%{color: yellow;}
-	60%{color: green;}
-	95%{color: blue;}
-	100%{color: white;}	
-}
-/* Internet Explorer */
-@-ms-keyframes rainbow{
-  0%{color: orange;}	
-  10%{color: purple;}	
-	20%{color: red;}
-	40%{color: yellow;}
-	60%{color: green;}
-	95%{color: blue;}
-	100%{color: white;}	
+  .site__title {
+    color: #f35626;
+    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 60s infinite linear;
+  }
+
+.site__content {
+  -webkit-animation: bounceInUp 1s;
+  -webkit-animation-delay: .1s;
 }
 
-/* Standard Syntax */
-@keyframes rainbow{
-  0%{color: orange;}	
-  10%{color: purple;}	
-	20%{color: red;}
-	40%{color: yellow;}
-	60%{color: green;}
-	95%{color: blue;}
-	100%{color: white;}
+  .site__content form {
+    -webkit-animation: bounceInUp 1s;
+    -webkit-animation-delay: .1s;
+  }
+
+/*-----------------------------------*\
+  $ANIMATIONS
+\*-----------------------------------*/
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
 }
   </style>  
 <a href="../../Websiteland/Cornhub/CornhubRecords.html" style="color:white; font-family:oreos;" class="rainbow">Hall of Fame</a>
