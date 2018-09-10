@@ -43,3 +43,8 @@
   font-family: "oreos";
   src: url("../Websiteland/Oreos.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "achi";
+  src: url("../Websiteland/achi regular.ttf") format("truetype");
+}
