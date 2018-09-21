@@ -84,32 +84,8 @@ h1{
 <span id="animationSandbox" style="display: block;"><div id="trigger" class="site_title mega" style="text-align:center;margin:auto;color:#888888;font-size:40px;font-weight:bold;">
 	
     <audio preload="auto" loop autoplay id="bay" volume="0.5" src="../Websiteland/Rollercoaster Tycoon 3 OST - Summer Air.mp3" type="audio/mp3"></audio>
-
-		<script>
-		$("#grad1 a").each(function(i) {
-  if (i != 0) {
-    $("#bay").parent()
-    .clone()
-    .attr("id", "bay" + i)
-    .appendTo($(this).parent());
-  }
-  $(this).data("bay", i);
-})
-.mouseenter(function() {
-  $("#bay" + $(this).data("bay"))[0].play();
-});
-		</script>
 	    
-	    <style>
-		    #trigger {
- height:1000px;
-   width:1000px
- border:1px solid black;
- padding:15px;
- color:white;
- background: repeating-radial-gradient(at center, black 10%, yellow 20%);
- }
-	    </style>
+	    <
 	    
 </div>
 
@@ -117,9 +93,9 @@ h1{
 	</span>
 
 
-<span id="animationSandbox" style="display: block;"><div id="background" class="site__title mega" style="text-align:center;margin:auto;color:#888888;font-size:40px;font-weight:bold;font-family:oreos;">
-	
+<span id="animationSandbox" style="display: block;"><div id="gradient" class="site__title mega" style="text-align:center;margin:auto;color:#888888;font-size:40px;font-weight:bold;font-family:oreos;">	
 <style>
+#gradient{
 background: #AAFFA9;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #11FFBD, #AAFFA9);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #11FFBD, #AAFFA9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
