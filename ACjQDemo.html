@@ -1,10 +1,7 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
 <script>
-        var event = $.Event('click');
-        event.clientX = 100;
-        event.clientY = 50;
-        $('div').trigger(event);
+        document.getElementById('addMe').dispatchEvent(new MouseEvent("click"));
 </script>
 
 <html>
