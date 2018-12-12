@@ -1,0 +1,36 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+        var event = $.Event('click');
+        event.clientX = 100;
+        event.clientY = 50;
+        $('div').trigger(event);
+</script>
+
+<html>
+<head>
+    <script src="includes/jquery-1.6.2.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+        $(document).ready(function() {
+
+            $("#addMe").click(function(){
+                var counter = parseInt($("#hiddenVal").val());
+                counter++;
+                $("#hiddenVal").val(counter);
+                $("#theCount").text(counter);
+            });
+
+        });
+    </script>
+</head>
+</head>
+
+<body>
+    <div id="theCount"></div>
+    <br/>
+    <button id="addMe">Add 1</button>
+    <input type="hidden" id="hiddenVal" value="0"
+
+</body>
+</html>
