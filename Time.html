@@ -1,2 +1,57 @@
-<iframe src="http://free.timeanddate.com/clock/i6jnpnjt/n2417/fn3/fs48/fcff0/tc00bfff/pc00bfff/fti/bas9/bat4/bac00bfff/pa20/tt0/th2/ta1/tb4" frameborder="0" width="641" height="168"></iframe>
+<iframe src="https://freesecure.timeanddate.com/clock/i6jnpnjt/n2417/fn3/fs48/fcff0/tc00bfff/pc00bfff/fti/bas9/bat4/bac00bfff/pa20/tt0/th2/ta1/tb4" frameborder="0" width="641" height="168"></iframe>
 
+<div>
+  <script>
+  (function () {
+  'use strict';
+
+  // Get RGB channels from a date
+  function RGBFromDate(date) {
+    return [
+      (date.getHours()   / 24 * 255),
+      (date.getMinutes() / 60 * 255),
+      (date.getSeconds() / 60 * 255)
+    ].map(Math.round);
+  }
+
+  // Get color luminance as a float from RGB channels
+  function colorLuminance(red, green, blue) {
+    return ((0.299 * red) + (0.587 * green) + (0.114 * blue)) / 256;
+  }
+  
+  // Get font color from RGB channels from background
+  function colorFromRGB(red, green, blue) {
+    return colorLuminance(red, green, blue) > 0.7 ? 'black' : 'white';
+  }
+  
+  // Get formatted date
+  function dateToContent(date) {
+    return date.toTimeString().replace(/.*(\d{2}:\d{2}:\d{2}).*/, "$1");
+  }
+
+  function colorClock() {        
+    var date = new Date();
+    var channels = RGBFromDate(date);
+    
+    document.body.style.color = colorFromRGB.apply(this, channels);
+    document.body.style.backgroundColor = 'rgb(' + channels.join(',') + ')';
+    document.body.innerHTML = dateToContent(date);
+  }
+  
+  var t = setInterval(colorClock, 1000);
+}());
+    </script>
+  <style>
+    @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro);
+
+html, body {
+  height: 100%;
+}
+
+body {
+  transition: .5s ease-out;
+  text-align: center;
+  font: 7em/100vh 'Source Code Pro', monospace;
+}
+  </style>
+  </div>
