@@ -8,7 +8,7 @@
   // Get RGB channels from a date
   function RGBFromDate(date) {
     return [
-      (date.getHours()   / 24 * 255),
+      (date.getHours()   / 12 * 255),
       (date.getMinutes() / 60 * 255),
       (date.getSeconds() / 60 * 255)
     ].map(Math.round);
