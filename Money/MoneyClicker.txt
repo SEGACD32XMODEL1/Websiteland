@@ -1,0 +1,21 @@
+Let's make a game!
+  name:Make Money
+  author:Robocop79
+  
+Settings
+  tiling background:moneyrolling.gif
+  building cost increase:101%
+  building cost refund:99%
+  
+Layout
+  use default
+  
+  *scratchNose
+    name:Scratch nose
+    desc:Click this to pickup money off the ground. Grants 1 penny per click.
+    on click:yield 1 penny
+    show clicks
+  
+  *Money
+  name:Money
+  desc:money earned
