@@ -9,11 +9,15 @@ Settings
   
 Layout
   use default
+
+Buttons
   *Pennies
     name:Pennies
     desc:Click this to pickup money off the ground. Grants 1 penny per click.
     on click:yield .01 money
     show clicks
+
+Resources
   *Money
-  name:Money
-  desc:money earned
+    name:Money
+    desc:money earned
