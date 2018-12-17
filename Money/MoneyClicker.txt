@@ -16,6 +16,7 @@ Buttons
     desc:Click this to pickup money off the ground. Grants 1 penny per click.
     on click:yield .01 money
     show clicks
+    class:bigButton hasFlares
 
 Resources
   *Money
