@@ -1,6 +1,6 @@
 Let's make a game!
   name:Make Money
-  author:Robocop79
+  by:Robocop79
   
 Settings
   tiling background:moneyrolling.gif
