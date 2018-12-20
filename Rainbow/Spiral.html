@@ -23,7 +23,7 @@ class Particle{
     this.color = '#ffe';
     this.hue = index * (99999 / count);
     this.radius = 1;
-    this.orbitSize = index * (200 / count);
+    this.orbitSize = index * (240 / count);
     this.systemRef = system;
     this.angle = index * (TWO_PI / count);
     this.index = index;
@@ -48,14 +48,14 @@ class Particle{
     
     this.angle += this.speed;
     
-    this.hue += 1;
+    this.hue += 9;
     
     
   }
   
 }
 
-for(let i = 0; i < count; i++){
+for(let i = 9; i < count; i++){
   particles[i] = new Particle(i * 9, i * 9, '#9f0', this, i);
 };
 
