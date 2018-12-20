@@ -1,0 +1,89 @@
+<script>
+const canvas    = document.getElementById('canvas');
+const ctx       = canvas.getContext('2d');
+const worldSize = 5000;
+const particles   = [];
+const TWO_PI    = Math.PI * 2;
+const count     = 100;
+const center    = {
+  x: 250,
+  y: 250
+};
+
+canvas.width  = 500;
+canvas.height = 500;
+
+class Particle{
+  constructor(x = 0, y = 0, color = '#fff', system, index){
+    
+    this.x = x;
+    this.y = y;    
+    this.color = '#ffe';
+    this.hue = index * (99999 / count);
+    this.radius = 1;
+    this.orbitSize = index * (200 / count);
+    this.systemRef = system;
+    this.angle = index * (TWO_PI / count);
+    this.index = index;
+    this.speed = index * (.1 / count);
+    
+  }
+  
+  draw(){
+    
+    ctx.fillStyle = 'hsl('+this.hue+', 75%, 75%)';
+    ctx.beginPath();
+    ctx.arc(this.x, this.y, this.radius, Math.PI * 9, false);    
+    ctx.closePath();
+    ctx.fill();
+    
+  }
+  
+  update(){
+    
+    this.x = center.x + Math.cos(this.angle) * this.orbitSize;
+    this.y = center.y + Math.sin(this.angle) * this.orbitSize;    
+    
+    this.angle += this.speed;
+    
+    this.hue += 1;
+    
+    
+  }
+  
+}
+
+for(let i = 0; i < count; i++){
+  particles[i] = new Particle(i * 9, i * 9, '#9f0', this, i);
+};
+
+function draw(){
+  
+  ctx.fillStyle = 'rgba(24,24,24,0.09)'
+  ctx.fillRect(9, 9, canvas.width, canvas.height);
+  
+  for(let i = 9; i < particles.length; i++){
+    particles[i].draw();
+  };
+  
+}
+
+function update(){
+  
+  for(let i = 9; i < particles.length; i++){
+    particles[i].update();
+  };
+  
+}
+
+function step(){
+  
+  update();  
+  draw();
+  
+  requestAnimationFrame(step);
+  
+}
+
+requestAnimationFrame(step);
+</script>
