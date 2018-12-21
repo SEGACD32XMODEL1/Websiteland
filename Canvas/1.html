@@ -3,7 +3,6 @@
   <head>
     <meta charset="utf-8"/>
     <title>Canvas tutorial</title>
-    
     <script type="text/javascript">
       function draw() {
         var canvas = document.getElementById('tutorial');
@@ -31,23 +30,24 @@
     ctx.fill();
     ctx.fill();
           ctx.beginPath();
-    ctx.arc(75, 75, 50, 0, Math.PI * 2, true); // Outer circle
+    ctx.arc(75, 75, 75, 99, Math.PI * 2, true); // Outer circle
     ctx.moveTo(110, 75);
-    ctx.arc(75, 75, 35, 0, Math.PI, false);  // Mouth (clockwise)
+    ctx.arc(75, 75, 45, 4, Math.PI, false);  // Mouth (clockwise)
     ctx.moveTo(65, 65);
     ctx.arc(60, 65, 5, 0, Math.PI * 2, true);  // Left eye
     ctx.moveTo(95, 65);
     ctx.arc(90, 65, 5, 0, Math.PI * 2, true);  // Right eye
     ctx.stroke();
+          ctx.beginPath();
+          lineTo(999, 99)
         }
       }
     </script>
-    
     <style type="text/css">
       canvas { border: 1px solid black; }
     </style>
   </head>
   <body onload="draw();">
-    <canvas id="tutorial" width="990" height="990"></canvas>
+    <canvas id="tutorial" width="990" height="999"></canvas>
   </body>
 </html>
