@@ -48,3 +48,8 @@
   font-family: "achi";
   src: url("../Websiteland/achi regular.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "santelia";
+  src: url("../Websiteland/santelia.ttf") format("truetype");
+}
