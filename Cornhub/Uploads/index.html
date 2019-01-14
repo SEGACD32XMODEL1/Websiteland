@@ -7,51 +7,37 @@ body {background-color: black;}
 <style rel="stylesheet" href="https://robocop79.github.io/Websiteland/CSS/Rainbow/rainbowtext.css">
 
   <style> 
-  h1,h2{
-  text-align:left;
+  /*-----------------------------------*\
+  $HEADER
+\*-----------------------------------*/
+.site__header {
+  -webkit-animation: bounceInUp 1s;
 }
-h1{
-  color:rgba(100, 50, 255, .8);
+  .site__title {
+    color: #f35626;
+    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 60s infinite linear;
+  }
+.site__content {
+  -webkit-animation: bounceInUp 1s;
+  -webkit-animation-delay: .1s;
 }
-.rainbow {
-   /* Chrome, Safari, Opera */
-  -webkit-animation: rainbow 1s infinite; 
-  
-  /* Internet Explorer */
-  -ms-animation: rainbow 1s infinite;
-  
-  /* Standar Syntax */
-  animation: rainbow 1s infinite; 
-}
-/* Chrome, Safari, Opera */
-@-webkit-keyframes rainbow{
-  0%{color: orange;}	
-  10%{color: purple;}	
-	20%{color: red;}
-	40%{color: yellow;}
-	60%{color: green;}
-	95%{color: blue;}
-	100%{color: white;}	
-}
-/* Internet Explorer */
-@-ms-keyframes rainbow{
-  0%{color: orange;}	
-  10%{color: purple;}	
-	20%{color: red;}
-	40%{color: yellow;}
-	60%{color: green;}
-	95%{color: blue;}
-	100%{color: white;}	
-}
-/* Standard Syntax */
-@keyframes rainbow{
-  0%{color: orange;}	
-  10%{color: purple;}	
-	20%{color: red;}
-	40%{color: yellow;}
-	60%{color: green;}
-	95%{color: blue;}
-	100%{color: white;}
+  .site__content form {
+    -webkit-animation: bounceInUp 1s;
+    -webkit-animation-delay: .1s;
+  }
+/*-----------------------------------*\
+  $ANIMATIONS
+\*-----------------------------------*/
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
 }
   </style> 
   
@@ -59,7 +45,7 @@ h1{
   
 <iframe src="https://robocop79.github.io/Websiteland/Cornhub/cornhubLogo.html" frameborder="0" id="mainPageBody" width="600px" height="220px" scrolling="no"></iframe>
 
-<h1 class="site__title mega" style="font-family:oreos; color:white;"> You Need to Sign Into Dropbox to Upload!</h1>
+<h1 class="site__title mega" style="font-family:oreos; color:white;"> No Need to Sign Into Dropbox to Upload!</h1>
 <h1 class="site__title mega" style="font-family:oreos; color:white;"> Pictures, Videos and GIFs Allowed!!! </h1>
 
 <h1> <img class="site__title mega" src="../../../Websiteland/Cornhub/Uploads/pointingdown.gif"></img></h1>
