@@ -34,6 +34,24 @@
     -webkit-filter: hue-rotate(-360deg);
   }
 }
+  
+  iframe{
+  position: relative;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 25s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+}
+
+  @keyframes example {
+  0%   {left:0px; top:0px;}
+  25%  {left:200px; top:0px;}
+  50%  {left:200px; top:200px;}
+  75%  {left:0px; top:200px;}
+  100% {left:0px; top:0px;}
+}
 </style>
 </head>
 
