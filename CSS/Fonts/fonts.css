@@ -53,3 +53,8 @@
   font-family: "santelia";
   src: url("https://robocop79.github.io/Websiteland/CSS/Fonts/SantEliaRoughAltBoldThrDEMO.otf") format("truetype");
 }
+
+@font-face {
+  font-family: "AmericanText";
+  src: url("https://robocop79.github.io/Websiteland/CSS/Fonts/AmericanText.ttf") format("truetype");
+}
