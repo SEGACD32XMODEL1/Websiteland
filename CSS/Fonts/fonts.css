@@ -58,3 +58,8 @@
   font-family: "AmericanText";
   src: url("https://robocop79.github.io/Websiteland/CSS/Fonts/AmericanText.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "PS1";
+  src: url("https://robocop79.github.io/Websiteland/CSS/Fonts/PS1.ttf") format("truetype");
+}
