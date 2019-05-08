@@ -1,0 +1,118 @@
+  div {
+  border: 5px solid #cc9909;
+  padding: 10px;
+  margin: 20px;
+  background-image: url("https://robocop79.github.io/Websiteland/School/WorldHistory/images/backmap.jpg");
+  text-align: center;
+  width:auto;
+  max-width:100%;
+	height:auto;
+}
+
+img {
+ width:auto;
+  max-width:100%;
+  height:auto;
+}
+
+button {
+word-wrap: break-word;
+text-shadow: 4px 0px 4px #9DE093;
+height:50%;
+width:50%;
+max-width:100%
+max-height:100%;
+font-size:50px;
+background-position: center;
+}
+
+#b {
+  background-image:url("https://aleteiaen.files.wordpress.com/2018/02/web3-cathedral-of-the-holy-cross-boston-bill-damon-cc-by-2-0.jpg?quality=100&strip=all&w=620&h=310&crop=1");
+word-wrap: break-word;
+}
+
+#b2 {
+ background-image:url("https://www.mrdowling.com/wp-content/uploads/2018/04/703clovis1.png");
+ background-size: 100%;
+ background-position: 1 -15; 
+ background-color: black
+word-wrap: break-word;
+}
+
+#b3 {
+  background-image:url("http://2.bp.blogspot.com/-aRmtCZfLLsU/VVE02OM66yI/AAAAAAAAeHo/zrvJIgQkq7M/s640/output_xRQ0KQ.gif");
+word-wrap: break-word;
+background-size:100%
+}
+
+button:link {
+  color: #9DE093;
+}
+
+button:visited {
+  color: green;
+}
+
+button:hover {
+  color: #EEEAAE;
+}
+
+button:active {
+  color: blue;
+}
+
+  .overlay{
+  position:center;
+   background:url(https://sites.google.com/site/medievalfeudalsystem7z/_/rsrc/1487806350537/home/ZEdQeLvMjzAjdEkqMnav2nHm.jpeg);
+  -webkit-animation:100s scroll infinite linear;
+  -moz-animation:100s scroll infinite linear;
+  -o-animation:100s scroll infinite linear;
+  -ms-animation:100s scroll infinite linear;
+  animation:100s scroll infinite linear;
+}
+
+@-webkit-keyframes scroll{
+  100%{
+    background-position:8999px -9999px;
+  }
+}
+
+@-moz-keyframes scroll{
+  100%{
+    background-position:8999px -9999px;
+  }
+}
+
+@-o-keyframes scroll{
+  100%{
+    background-position:8999px -9999px;
+  }
+}
+
+@-ms-keyframes scroll{
+  100%{
+    background-position:8999px -9999px;
+  }
+}
+
+@keyframes scroll{
+  100%{
+    background-position:8999px -9999px;
+  }
+}
+
+.b5{
+ background-image:url("https://robocop79.github.io/Websiteland/School/WorldHistory/images/ussrflagdesigns.gif"); 
+height:45%;
+box-shadow: 0 0 25px .25px red inset;
+}
+
+.b6{
+ background-image:url("https://steamuserimages-a.akamaihd.net/ugc/960838675397080200/85498258C1324F58336A6D6FF7FE396BFD590445/"); 
+height: 50%
+}
+
+.b7 {
+ background-image:url(https://i.redd.it/ixie4vn2s2211.gif);
+ background-size:50%
+}
