@@ -1,0 +1,31 @@
+div {
+  margin:auto;
+  text-align:center;
+}
+
+.img1 {
+ margin:auto;
+ position:sticky;
+ z-index:2;
+ height:100px;
+ text-align:center;
+ max-height:289;
+ max-width:2181px;
+}
+
+.img2 {
+position:relative;
+bottom:100px;
+right:4;
+z-index:1;
+text-align:center;
+max-height:289;
+max-width:2181;
+width:750;
+opacity:.50;
+}
+
+html{
+ background-image:url("https://media1.tenor.com/images/3c703b0dab7aefa14c4bf7a039986100/tenor.gif?itemid=11339560"); 
+ background-size:900px;
+}
