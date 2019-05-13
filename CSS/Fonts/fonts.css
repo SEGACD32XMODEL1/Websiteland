@@ -63,3 +63,8 @@
   font-family: "PS1";
   src: url("https://robocop79.github.io/Websiteland/CSS/Fonts/PS1.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "Impact";
+  src: url("https://robocop79.github.io/Websiteland/CSS/Fonts/impact.ttf") format("truetype");
+}
