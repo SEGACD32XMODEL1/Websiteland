@@ -9,23 +9,84 @@ div {
  z-index:2;
  height:100px;
  text-align:center;
- max-height:289;
+ max-height:289px;
  max-width:2181px;
 }
 
 .img2 {
 position:relative;
 bottom:100px;
-right:4;
+right:4px;
 z-index:1;
 text-align:center;
-max-height:289;
-max-width:2181;
-width:750;
-opacity:.50;
+max-height:289px;
+max-width:2181px;
+width:750px;
+opacity:.85;
 }
 
-html{
+body {
  background-image:url("https://media1.tenor.com/images/3c703b0dab7aefa14c4bf7a039986100/tenor.gif?itemid=11339560"); 
  background-size:900px;
+ background-position:bottom right;
+      animation: animatedBackground 410s linear infinite;
+			-ms-animation: animatedBackground 410s linear infinite;
+			-moz-animation: animatedBackground 410s linear infinite;
+			-webkit-animation: animatedBackground 410s linear infinite;
 }
+
+@keyframes animatedBackground {
+  		0% { background-position: 0 0; }
+			50% { background-position: 1000px 1000px; }
+      100% { background-position: 3000px 3000px; }
+		}
+		@-webkit-keyframes animatedBackground {
+			0% { background-position: 0 0; }
+  		50% { background-position: 1000px 1000px; }
+      100% { background-position: 3000px 3000px; }
+		}
+		@-ms-keyframes animatedBackground {
+			0% { background-position: 0 0; }
+  		50% { background-position: 1000px 1000px; }
+      100% { background-position: 3000px 3000px; }
+		}
+		@-moz-keyframes animatedBackground {
+			0% { background-position: 0 0; }
+    	50% { background-position: 1000px 1000px; }
+      100% { background-position: 3000px 3000px; }
+		}
+  	
+    .button1 {
+     background-image:url("https://robocop79.github.io/Websiteland/School/WorldHistory/GLF/images/impactgellogo.png");
+     background-size:45%;
+     background-repeat:no-repeat;
+     height:30%;
+     width:100%;
+     color:rgba(0,0,0,0.25);
+     -webkit-text-stroke:1.5px white;
+     animation-timing-function: ease;
+     font-size:50px;
+    }
+    
+    .button1:hover {
+     -webkit-text-stroke:1px white;
+     animation:color 3s linear infinite;
+     animation-timing-function: cubic-bezier:(9,99,750,999);
+    }
+    
+    @keyframes color {
+    0% {color:green; background-size:45%}
+    25% {color:red; background-size:75%;}
+    50% {color:yellow; background-size:50%}
+    60% {color: white; background-size:25%;}
+    65% {color:blue; background-size:20%}
+    75% {color:mediumspringgreen; background-size:15%; background-repeat:repeat;}
+    85% {color:purple; background-size:10%; background-repeat:repeat-y;}
+    90% {color:teal; background-size:15%; background-repeat:repeat-x;}
+    95% {color:maroon; background-size:20%;}
+    96% {color:brown; background-size:25%;}
+    97% {color:orange; background-size:50%;}
+    98% {color:azure; background-size:45%;}
+    99% {color:pink; background-size:70%;}
+    100% {color:tomato; background-size:85% auto; background-repeat:repeat-y;}
+    }  
