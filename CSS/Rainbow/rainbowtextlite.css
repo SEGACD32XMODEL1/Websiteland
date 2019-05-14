@@ -1,0 +1,16 @@
+/*Add this code to any element
+    color: #f35626;
+    background-image: linear-gradient(92deg,#f35626,#feab3a);
+    -webkit-background-clip: text;
+    text-fill-color: transparent;
+    animation: hue 60s infinite linear;
+*/
+
+@keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
