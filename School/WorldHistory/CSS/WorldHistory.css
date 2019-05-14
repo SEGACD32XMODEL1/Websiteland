@@ -109,10 +109,15 @@ box-shadow: 0 0 25px .25px red inset;
 
 .b6{
  background-image:url("https://steamuserimages-a.akamaihd.net/ugc/960838675397080200/85498258C1324F58336A6D6FF7FE396BFD590445/"); 
-height: 50%
+height: 50%;
 }
 
 .b7 {
  background-image:url(https://i.redd.it/ixie4vn2s2211.gif);
- background-size:50%
+ background-size:50%;
+}
+
+.b8 {
+background-image:url(https://vignette.wikia.nocookie.net/plantsvszombies/images/b/bf/LilypadH.gif/revision/latest/scale-to-width-down/185?cb=20180131080338);
+background-size:100%;
 }
