@@ -66,7 +66,8 @@ body {
      -webkit-text-stroke:1.5px white;
      animation-timing-function: ease;
      font-size:50px;
-    }
+     padding:90;    
+}
     
     .button1:hover {
      -webkit-text-stroke:1px white;
