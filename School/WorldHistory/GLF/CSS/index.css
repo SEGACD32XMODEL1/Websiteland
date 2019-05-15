@@ -67,6 +67,7 @@ body {
      animation-timing-function: ease;
      font-size:50px;
      padding:90;    
+     text-align:center;
 }
     
     .button1:hover {
