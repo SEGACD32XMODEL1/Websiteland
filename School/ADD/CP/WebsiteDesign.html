@@ -2,7 +2,7 @@
 <html>
 <head>
   
-	
+  
 <style>
 .div {
   border: 100px solid transparent;
@@ -47,7 +47,6 @@
     -webkit-filter: hue-rotate(-360deg);
   }
 }
-
 .links{
  text-align:center;
  font-size:150%;
@@ -58,11 +57,42 @@
  border-width:1;
  animation:border 2s infinite linear;
 }
-
 @keyframes border {
 0% {border-radius: -50%;}
 50% {border-radius: 50%;}
 100% {border-radius: -50%;}
+}
+
+p {
+ border:dotted; 
+}
+
+.corn {
+ width:100%;
+ height:100%;
+ animation:oval linear 5s infinite;
+ background-image:url("https://robocop79.github.io/Websiteland/vietcorn.jpg");
+ background-size:100%;
+ 
+}
+
+@keyframes oval{
+0%{clip-path: polygon(50% 0%, 0 50%, 50% 100%, 100% 50%); transition:none; background-size:100%;}
+10%{clip-path: polygon(50% 0%, 0 50%, 50% 100%, 0 50%); transition:none; background-size:100%; background-image:url("https://robocop79.github.io/Websiteland/vietcorn.jpg");}
+11%{clip-path: polygon(50% 0%, 0 50%, 50% 100%, 0 50%); background-image:url("https://robocop79.github.io/Websiteland/dakekimi_01 (1).jpg");}
+20%{clip-path: polygon(50% 0%, 0 50%, 50% 100%, 100% 50%); transition:none; background-size:100%;}
+30%{clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 100% 50%); background-image:url("https://robocop79.github.io/Websiteland/dakekimi_01 (1).jpg");; transition: none; background-size:100%;}
+31%{clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 100% 50%); background-image:url("https://robocop79.github.io/Websiteland/vsaucecorn.jpg"); transition: none; background-size:100%;}
+40%{clip-path: polygon(50% 0%, 0 50%, 50% 100%, 100% 50%); background-image:url("https://robocop79.github.io/Websiteland/vsaucecorn.jpg"); transition:none; background-size:100%;}
+50%{clip-path: polygon(50% 100%, 0 50%, 50% 100%, 100% 50%); background-image:url("https://robocop79.github.io/Websiteland/vsaucecorn.jpg"); background-size:100%;}
+51%{clip-path: polygon(50% 100%, 0 50%, 50% 100%, 100% 50%); background-image:url("https://robocop79.github.io/Websiteland/italiancorn.jpg"); background-size:100%;}
+60%{clip-path: polygon(50% 100%, 0 50%, 50% 0, 100% 50%); background-image:url("https://robocop79.github.io/Websiteland/italiancorn.jpg"); background-size:100%;}
+70%{clip-path: polygon(50% 0, 0 50%, 50% 0, 100% 50%); background-image:url("https://robocop79.github.io/Websiteland/italiancorn.jpg");}
+71%{clip-path: polygon(50% 0, 0 50%, 50% 0, 100% 50%); background-image:url("https://robocop79.github.io/Websiteland/purple-corn.jpg");}
+80%{clip-path: polygon(50% 0, 0 50%, 50% 100%, 100% 50%); background-image:url("https://robocop79.github.io/Websiteland/purple-corn.jpg");}
+90%{clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%); background-image:url("https://robocop79.github.io/Websiteland/purple-corn.jpg");}
+91%{clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%); background-image:url("https://robocop79.github.io/Websiteland/vietcorn.jpg");}
+100%{clip-path: polygon(50% 0, 0 50%, 50% 100%, 100% 50%); background-image:url("https://robocop79.github.io/Websiteland/vietcorn.jpg");}
 }
 	</style>
 	
@@ -96,6 +126,9 @@ Tongue cupim brisket ham andouille burgdoggen shankle drumstick spare ribs pig m
 <br><br>
 Shank pork chop leberkas turducken doner kevin, pancetta spare ribs. Salami rump strip steak ball tip frankfurter, meatloaf buffalo spare ribs cow chicken pork chop biltong. Jerky pork kevin venison turducken chuck. Meatball tongue t-bone pastrami tail ham hock chuck biltong short loin venison spare ribs. Boudin kevin landjaeger frankfurter meatloaf drumstick picanha porchetta pork loin bacon bresaola shank beef ribs ribeye meatball.
 </p>
+
+<div class=corn>
+</div>
 
 </body>
 </div>
