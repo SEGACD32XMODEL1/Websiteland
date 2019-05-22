@@ -68,3 +68,8 @@
   font-family: "Impact";
   src: url("https://robocop79.github.io/Websiteland/CSS/Fonts/impact.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "vcr";
+  src: url("https://robocop79.github.io/Websiteland/CSS/Fonts/vcr.ttf") format("truetype");
+}
