@@ -1,0 +1,10 @@
+root:
+  ~/code/projects/jquery.adaptive-backgrounds.js
+
+commands:
+  git:       git st
+  serve:     node ./static.js
+
+layout:
+  - [ git ]
+  - [ serve ]

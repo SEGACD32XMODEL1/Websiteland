@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>B/W Backgrounds</title>
+
+  <script type="text/javascript" src='/lib/jquery.js'></script>
+  <script type="text/javascript" src='/src/jquery.adaptive-backgrounds.js'></script>
+  <script type="text/javascript">
+
+  $(document).ready(function(){
+    $.adaptiveBackground.run({
+      exclude: []
+    });
+  });
+
+  </script>
+
+  <style type="text/css">
+
+    .img-wrap{
+      border: 2px solid #ccc;
+      text-align: center;
+      width: 800px;
+      margin: 10px auto;
+    }
+
+    .img-wrap img{
+      height: 100%;
+      border: 1px dotted #ccc;
+    }
+
+  </style>
+
+</head>
+<body>
+
+  <div class='img-wrap'>
+    <img class="img" src="images/black-bg.jpg" data-adaptive-background>
+  </div>
+
+  <div class='img-wrap'>
+    <img class="img" src="images/white-bg.jpg" data-adaptive-background>
+  </div>
+
+</body>
+</html>
