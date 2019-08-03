@@ -73,3 +73,8 @@
   font-family: "vcr";
   src: url("https://robocop79.github.io/Websiteland/CSS/Fonts/vcr.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "spongebob";
+  src: url("https://robocop79.github.io/Websiteland/CSS/Fonts/Some Time Later.otf") format("opentype");
+}
