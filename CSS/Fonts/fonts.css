@@ -78,3 +78,8 @@
   font-family: "spongebob";
   src: url("https://robocop79.github.io/Websiteland/CSS/Fonts/Some Time Later.otf") format("opentype");
 }
+
+@font-face {
+  font-family: "Pepsi";
+  src: url("https://robocop79.github.io/Websiteland/CSS/Fonts/PEPSI_pl.ttf") format("truetype");
+}
