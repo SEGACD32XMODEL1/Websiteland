@@ -83,3 +83,8 @@
   font-family: "Pepsi";
   src: url("https://robocop79.github.io/Websiteland/CSS/Fonts/PEPSI_pl.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "Sweet Pancake";
+  src: url("https://robocop79.github.io/Websiteland/CSS/Fonts/Sweet Pancake Demo.ttf") format("truetype");
+}
