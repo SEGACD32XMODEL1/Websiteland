@@ -88,3 +88,8 @@
   font-family: "Sweet Pancake";
   src: url("https://robocop79.github.io/Websiteland/CSS/Fonts/Sweet Pancake Demo.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "Mario";
+  src: url("https://robocop79.github.io/Websiteland/CSS/Fonts/SuperMario256.ttf") format("truetype");
+}
