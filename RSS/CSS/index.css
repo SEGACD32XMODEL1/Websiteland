@@ -1,0 +1,16 @@
+img {border:0px;}
+.feed-container{font-size:12px;color:#fff;border:1px solid #CCCCCC;}
+.feed-container .header{display:none;}
+.feed-container .footer{display:none}
+.feed-container .content{margin:0px;padding:0 3px;}
+.feed-container .content .item{margin:0 0 7px 0;padding:0 0 7px 0;}
+.feed-container .content .item .title{margin:1px 0 1px 3px;padding:1px 2px 1px 3px;color:#000;font-weight:bold;}
+.feed-container .content .item .title a:link{color:#000;text-decoration:none;}
+.feed-container .content .item .title a:visited{color:#000;text-decoration:none;}
+.feed-container .content .item .title a:hover{color:#000;text-decoration:underline;}
+.feed-container .content .item .title a:active{color:#000;text-decoration:none;}
+.feed-container .content .item .description{margin:0 0 0 3px;padding:0 2px 0 3px;color:#666;}
+.feed-container .content .item .description a{text-decoration:none;color:#000;}
+.feed-container .content .item .description a:hover{text-decoration:underline;color:#666;}
+
+@import url("https://robocop79.github.io/Websiteland/CSS/Fonts/fonts.css")
