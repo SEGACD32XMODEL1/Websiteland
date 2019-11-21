@@ -93,3 +93,7 @@
   font-family: "Mario";
   src: url("https://robocop79.github.io/Websiteland/CSS/Fonts/SuperMario256.ttf") format("truetype");
 }
+@font-face {
+  font-family: "ciberg";
+    src: url("https://robocop79.github.io/Websiteland/CSS/Fonts/CiberGotica.otf") format("opentype");
+}
