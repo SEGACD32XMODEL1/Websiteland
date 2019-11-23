@@ -18,11 +18,11 @@
   font-family: "baron";
     src: url("https://robocop79.github.io/Websiteland/CSS/Fonts/Baron Neue.otf") format("opentype");
 }
-  
+
  @font-face {
   font-family: "cowboy";
     src: url("https://robocop79.github.io/Websiteland/CSS/Fonts/Ol' Cowboy DEMO.ttf") format("truetype");
-} 
+}
 
 @font-face {
   font-family: "zilap";
@@ -93,7 +93,13 @@
   font-family: "Mario";
   src: url("https://robocop79.github.io/Websiteland/CSS/Fonts/SuperMario256.ttf") format("truetype");
 }
+
 @font-face {
   font-family: "ciberg";
     src: url("https://robocop79.github.io/Websiteland/CSS/Fonts/CiberGotica.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Hanalei";
+  src: url("https://robocop79.github.io/Websiteland/CSS/Fonts/Hanalei-Regular.ttf") format("truetype");
 }
