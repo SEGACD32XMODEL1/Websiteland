@@ -5,15 +5,16 @@
 font-family:Hanalei;
 text-align:center;
 font-size:90;
+font-weight:100;
 color: purple;
 animation: hue 16s infinite linear;
 background-color: rgba(255, 255, 255, 0.5);
 }
 
 @keyframes hue {
-  0% {color:purple;background-color: rgba(255, 255, 255, 0.5);}
-  50% {color:gold;background-color: rgba(0, 0, 0, 0.5);}
-  100% {color:purple;background-color: rgba(255, 255, 255, 0.5);}
+  0% {color:purple;background-color: gold;}
+  50% {color:gold;background-color: purple;}
+  100% {color:purple;background-color: gold;}
 }
 
 button.islandtime {
@@ -23,8 +24,20 @@ margin:auto;
 display:block;
 font-size:50;
 background-image: url("https://robocop79.github.io/Websiteland/School/GISH Related Files/islandtime.gif");
-background-size:45%;
-font-weight:1000;
+background-size:100% 100%;
+background-repeat:no-repeat;
+background-color:black;
+font-weight:100;
+color:white;
+animation:it 15s linear infinite;
+height:25%;
+width:100%;
+}
+
+@keyframes it {
+0% {color:purple;}
+50% {color:gold;}
+100% {color:purple;}
 }
 
 button.back {
@@ -37,8 +50,10 @@ background-image: url("https://robocop79.github.io/Websiteland/School/GISH Relat
 background-size:107% 100%;
 background-position:100%;
 background-repeat:no-repeat;
-font-weight:1000;
+background-color:black;
+font-weight:100;
 postion:relative;
+color:white;
 }
 
 html {
