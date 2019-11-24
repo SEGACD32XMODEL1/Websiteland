@@ -5,6 +5,15 @@
 font-family:Hanalei;
 text-align:center;
 font-size:90;
+color: purple;
+animation: hue 16s infinite linear;
+background-color: rgba(255, 255, 255, 0.5);
+}
+
+@keyframes hue {
+  0% {color:purple;background-color: rgba(255, 255, 255, 0.5);}
+  50% {color:gold;background-color: rgba(0, 0, 0, 0.5);}
+  100% {color:purple;background-color: rgba(255, 255, 255, 0.5);}
 }
 
 button.islandtime {
@@ -25,8 +34,11 @@ margin:auto;
 display:block;
 font-size:50;
 background-image: url("https://robocop79.github.io/Websiteland/School/GISH Related Files/redarrow.gif");
-background-size:45%;
+background-size:107% 100%;
+background-position:100%;
+background-repeat:no-repeat;
 font-weight:1000;
+postion:relative;
 }
 
 html {
@@ -45,14 +57,16 @@ background-repeat:repeat;
 
 <div>
 <h1 class="title">
-<span style="color:purple;">GISH</span><span style="color:gold;">FILES</span>
+GISH FILES
 </h1>
 </div>
 
+<div>
 <button class="islandtime" onclick="location.href='https://robocop79.github.io/Websiteland/School/GISH Related Files/IslanderTime/index.html';">
 Islander Time
 </button>
 
 <button class="back" onclick="location.href='https://robocop79.github.io/Websiteland/School/index.html';">
-<-- GO BACK
+GO BACK
 </button>
+</div>
