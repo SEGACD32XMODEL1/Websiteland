@@ -103,3 +103,8 @@
   font-family: "Hanalei";
   src: url("https://robocop79.github.io/Websiteland/CSS/Fonts/Hanalei-Regular.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "Pulse";
+  src: url("https://robocop79.github.io/Websiteland/CSS/Fonts/ThePulse.ttf") format("truetype");
+}
