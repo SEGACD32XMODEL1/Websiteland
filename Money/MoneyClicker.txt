@@ -1,9 +1,9 @@
 Let's make a game!
   name:Make Money
-  by:Robocop79
+  by:SEGACD32XMODEL1
   
 Settings
-  tiling background:https://robocop79.github.io/Websiteland/Money/moneyrolling.gif
+  tiling background:https://SEGACD32XMODEL1.github.io/Websiteland/Money/moneyrolling.gif
   building cost increase:101%
   building cost refund:99%
   
