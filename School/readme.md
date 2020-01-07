@@ -1,1 +1,1 @@
-This for School sites!
+School Related Content that you can use
