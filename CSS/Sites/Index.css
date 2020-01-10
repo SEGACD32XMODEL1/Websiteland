@@ -1,12 +1,15 @@
 @import "https://SEGACD32XMODEL1.github.io/Websiteland/CSS/Fonts/fonts.css";
 @import "https://SEGACD32XMODEL1.github.io/Websiteland/CSS/Rainbow/rainbowtext.css";
 
-  h1,h2{
+h2{
   text-align:left;
 }
+
 h1{
+  text-align:left;
   color:rgba(100, 50, 255, .8);
 }
+
 .rainbow {
    /* Chrome, Safari, Opera */
   -webkit-animation: rainbow 1s infinite; 
@@ -17,6 +20,7 @@ h1{
   /* Standar Syntax */
   animation: rainbow 1s infinite; 
 }
+
 /* Chrome, Safari, Opera */
 @-webkit-keyframes rainbow{
   0%{color: orange;}	
