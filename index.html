@@ -25,9 +25,11 @@
 
     <style>
         @import "https://SEGACD32XMODEL1.github.io/Websiteland/CSS/Sites/Index.css";
-
+        @import "https://SEGACD32XMODEL1.github.io/Websiteland/CSS/Sites/musicplayer.css";
     </style>
 
+    <script type="text/javascript" src="https://segacd32xmodel1.github.io/Websiteland/Javascript/musicplayer.js"></script>
+    
 </head>
 
 <span id="animationSandbox" style="display: block;">
@@ -56,18 +58,27 @@
     </div>
 </span>
 
-<span id="animationSandbox" style="display: block;">
-    <div id="trigger" class="site_title mega" style="text-align:center;margin:auto;color:#888888;font-size:4vh;font-weight:bold;">
-
-        <audio preload="auto" loop autoplay src="SEGACD32XMODEL1.github.io/Websiteland/SummerAir.mp3" type="audio/mp3"></audio>
-
-
-        <span id="animationSandbox" style="display: block;">
-            <div id="gradient" class="site__title mega" style="text-align:center;margin:auto;color:#888888;font-size:4vh;font-weight:bold;font-family:oreos;">
-        </span>
-    </div>
-
-    <audio preload="auto" controls loop autoplay src="https://SEGACD32XMODEL1.github.io/Websiteland/SummerAir.mp3" type="audio/mp3"></audio>
     <a class="back" href="https://SEGACD32XMODEL1.github.io">
         <h3 style="font-family:santelia;">⇽ Go Back</h3>
     </a>
+    
+<div class="container">
+    <div class="column add-bottom">
+        <div id="mainwrap">
+            <div id="nowPlay">
+                <span id="npAction">Paused...</span><span id="npTitle"></span>
+            </div>
+            <div id="audiowrap">
+                <div id="audio0">
+                    <audio id="audio1" preload controls>Your browser does not support HTML5 Audio! 😢</audio>
+                </div>
+                <div id="tracks">
+                    <a id="btnPrev">&vltri;</a><a id="btnNext">&vrtri;</a>
+                </div>
+            </div>
+            <div id="plwrap">
+                <ul id="plList"></ul>
+            </div>
+        </div>
+    </div>
+</div>
