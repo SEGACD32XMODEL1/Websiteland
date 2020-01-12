@@ -8,6 +8,9 @@ h2{
 h1{
   text-align:left;
   color:rgba(100, 50, 255, .8);
+  font-size:10vh;
+  white-space: nowrap;
+  resize: both;
 }
 
 .rainbow {
@@ -61,21 +64,6 @@ h1{
   display: none;
 }
 
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {display: none;}
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .topnav.responsive {position: relative;}
-  .topnav.responsive .icon {
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
   .topnav.responsive a {
     float: none;
     display: block;
@@ -93,6 +81,18 @@ color:         #ffffff;
 display:       inline-block;
 font:          italic bold 5.5vh "Calibri", sans-serif;
 text-align:    center;
+text-shadow:   2px 2px #000000;
+    }
+
+    #gradient{
+background: #AAFFA9;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #11FFBD, #AAFFA9);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #11FFBD, #AAFFA9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	}
+
+div.backbutton{
+text-align:center;
+}
 text-shadow:   2px 2px #000000;
     }
     #gradient{
