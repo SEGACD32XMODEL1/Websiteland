@@ -1,6 +1,10 @@
 @import "https://SEGACD32XMODEL1.github.io/Websiteland/CSS/Fonts/fonts.css";
 @import "https://SEGACD32XMODEL1.github.io/Websiteland/CSS/Rainbow/rainbowtext.css";
 
+html{
+    padding-top:0px;
+}
+
 h3{
   font-size:1.5vw;
 }
@@ -81,10 +85,6 @@ background: -webkit-linear-gradient(to right, #11FFBD, #AAFFA9);  /* Chrome 10-2
 background: linear-gradient(to right, #11FFBD, #AAFFA9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	}
 
-div.backbutton{
-text-align: center;
-text-shadow:   2px 2px #000000;
-}
     #gradient{
 background: #AAFFA9;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #11FFBD, #AAFFA9);  /* Chrome 10-25, Safari 5.1-6 */
