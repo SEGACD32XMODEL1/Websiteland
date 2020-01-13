@@ -1,6 +1,10 @@
 @import "https://SEGACD32XMODEL1.github.io/Websiteland/CSS/Fonts/fonts.css";
 @import "https://SEGACD32XMODEL1.github.io/Websiteland/CSS/Rainbow/rainbowtext.css";
 
+h3{
+  font-size:1.5vw;
+}
+
 h2{
   text-align:left;
 }
@@ -83,7 +87,7 @@ display:       inline-block;
 font:          italic bold 5.5vh "Calibri", sans-serif;
 text-align:    center;
 text-shadow:   2px 2px #000000;
-height:        1vh;
+height:        3vh;
     }
 
     #gradient{
