@@ -8,9 +8,10 @@ h2{
 h1{
   text-align:left;
   color:rgba(100, 50, 255, .8);
-  font-size:10vw;
+  font-size:9vw;
   white-space: nowrap;
   resize: both;
+  line-height: normal;
 }
 
 .rainbow {
@@ -91,13 +92,11 @@ background: linear-gradient(to right, #11FFBD, #AAFFA9); /* W3C, IE 10+/ Edge, F
 	}
 
 div.backbutton{
-text-align:center;
-}
+text-align: center;
 text-shadow:   2px 2px #000000;
-    }
+}
     #gradient{
 background: #AAFFA9;  /* fallback for old browsers */
 background: -webkit-linear-gradient(to right, #11FFBD, #AAFFA9);  /* Chrome 10-25, Safari 5.1-6 */
 background: linear-gradient(to right, #11FFBD, #AAFFA9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	}
-}
