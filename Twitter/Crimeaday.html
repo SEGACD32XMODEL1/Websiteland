@@ -1,40 +1,3 @@
-<script>
-jQuery(function($) {
-    var re = /((http|https|ftp):\/\/[a-zа-я0-9\w?=&.\/-;#~%-]+(?![a-zа-я0-9\w\s?&.\/;#~%"=-]*>))/g;
-    function makeHTML(textNode) {
-        var source = textNode.data;
-        return source.replace(re, function() {
-            var url = arguments[0];
-            var a = $('<a></a>').attr({'onclick' : 'window.open(\'' + url + '\'); return false;','href': '#', 'target': '_blank'}).text(url);
-            return url.match(/^https?:\/\/$/) ? url : $('<div></div>').append(a).html();
-        });
-    };
-    function eachText(node, callback) {
-        $.each(node.childNodes, function() {
-            if (this.nodeType != 8 && this.nodeName != 'A') {
-                this.nodeType != 1 ? callback(this) : eachText(this, callback);
-            }
-        });
-    };
-    $.fn.autolink = function() {
-        return this.each(function() {
-            var queue = [];
-            eachText(this, function(e) {
-                var html = makeHTML(e);
-                if (html != e.data) {
-                    queue.push([e, makeHTML(e)]);
-                }
-            });
-            $.each(queue, function(i, x) {
-                $(x[0]).replaceWith(x[1]);
-            });
-        });
-    };
-});
-</script>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
 <head>	
 <!-- ****** faviconit.com favicons ****** -->
 	<link rel="shortcut icon" href="https://SEGACD32XMODEL1.github.io/Websiteland/Twitter/favicons/favicon.ico">
@@ -59,96 +22,18 @@ jQuery(function($) {
 	<meta name="msapplication-config" content="https://SEGACD32XMODEL1.github.io/Websiteland/Twitter/favicons/browserconfig.xml">
 	<!-- ****** faviconit.com favicons ****** -->
 	<title> Federal Laws </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://segacd32xmodel1.github.io/Websiteland/Javascript/LinkDetector.js"></script>
+    <script>
+    jQuery(function ($) {
+    $('document.body').autolink();
+});
+    </script>
 </head>
 
 <style>
  @import "https://SEGACD32XMODEL1.github.io/Websiteland/CSS/Fonts/fonts.css";
  @import "https://SEGACD32XMODEL1.github.io/Websiteland/CSS/Rainbow/rainbowtext.css";
-  }
-/*-----------------------------------*\
-  $HEADER
-\*-----------------------------------*/
-.site__header {
-  -webkit-animation: bounceInUp 1s;
-}
-  .site__title {
-    color: #f35626;
-    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -webkit-animation: hue 30s infinite linear;
-  }
-.site__content {
-  -webkit-animation: bounceInUp 1s;
-  -webkit-animation-delay: .1s;
-}
-  .site__content form {
-    -webkit-animation: bounceInUp 1s;
-    -webkit-animation-delay: .1s;
-  }
-/*-----------------------------------*\
-  $ANIMATIONS
-\*-----------------------------------*/
-@-webkit-keyframes hue {
-  from {
-    -webkit-filter: hue-rotate(0deg);
-  }
-  to {
-    -webkit-filter: hue-rotate(-360deg);
-  }
-} 
-
- h1,h2{
-  text-align:left;
-}
-h1{
-  color:rgba(100, 50, 255, .8);
-}
-.rainbow {
-   /* Chrome, Safari, Opera */
-  -webkit-animation: rainbow 1s infinite; 
-  
-  /* Internet Explorer */
-  -ms-animation: rainbow 1s infinite;
-  
-  /* Standar Syntax */
-  animation: rainbow 1s infinite; 
-}
-/* Chrome, Safari, Opera */
-@-webkit-keyframes rainbow{
-  0%{color: orange;}	
-  10%{color: purple;}	
-	20%{color: red;}
-	40%{color: yellow;}
-	60%{color: green;}
-	95%{color: blue;}
-	100%{color: white;}	
-}
-/* Internet Explorer */
-@-ms-keyframes rainbow{
-  0%{color: orange;}	
-  10%{color: purple;}	
-	20%{color: red;}
-	40%{color: yellow;}
-	60%{color: green;}
-	95%{color: blue;}
-	100%{color: white;}	
-}
-/* Standard Syntax */
-@keyframes rainbow{
-  0%{color: orange;}	
-  10%{color: purple;}	
-	20%{color: red;}
-	40%{color: yellow;}
-	60%{color: green;}
-	95%{color: blue;}
-	100%{color: white;}
-}
-	 }
-@font-face {
-  font-family: "LemonMilk";
-    src: url("SEGACD32XMODEL1.github.io/Websiteland/CSS/Fonts/LemonMilk.ttf") format("truetype");
-}
 </style>
 
 <span id="animationSandbox"><div id="grad1" class="site__title mega" style="text-align:center;margin:auto;color:#888888;font-size:40px;font-weight:bold;font-family:oreos;display: inline;" >
