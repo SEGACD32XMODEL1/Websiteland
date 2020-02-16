@@ -23,12 +23,13 @@
 	<!-- ****** faviconit.com favicons ****** -->
 	<title> Federal Laws </title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://segacd32xmodel1.github.io/Websiteland/Javascript/LinkDetector.js"></script>
+    <script src="https://SEGACD32XMODEL1.github.io/Websiteland/Javascript/Linkify/linkify.min.js"></script>
+    <script src="https://SEGACD32XMODEL1.github.io/Websiteland/Javascript/Linkify/linkify-jquery.min.js"></script>
     <script>
-    jQuery(function ($) {
-    $('document.body').autolink();
+    $('body').linkify();
+$('#sidebar').linkify({
+    target: "_blank"
 });
-    </script>
 </head>
 
 <style>
