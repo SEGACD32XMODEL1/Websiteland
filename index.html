@@ -69,22 +69,22 @@
     </div>
 </span>
     <hr>
-<div class="container">
-    <div class="column add-bottom">
-        <div id="mainwrap">
-            <div id="nowPlay">
-                <span id="npAction">Paused...</span><span id="npTitle"></span>
+<div class="container" width="100%">
+    <div class="column add-bottom" width="100%">
+        <div id="mainwrap" width="100%">
+            <div id="nowPlay" width="100%">
+                <span id="npAction" width="100%">Paused...</span><span id="npTitle" width="100%"></span>
             </div>
             <div id="audiowrap">
-                <div id="audio0">
-                    <audio id="audio1" preload controls>Your browser does not support HTML5 Audio! 😢</audio>
+                <div id="audio0" width="100%">
+                    <audio id="audio1" preload controls width="100%">Your browser does not support HTML5 Audio! 😢</audio>
                 </div>
-                <div id="tracks">
-                    <a id="btnPrev">&vltri;</a><a id="btnNext">&vrtri;</a>
+                <div id="tracks" width="100%">
+                    <a id="btnPrev" width="100%">&vltri;</a><a id="btnNext" width="100%">&vrtri;</a>
                 </div>
             </div>
-            <div id="plwrap">
-                <ul id="plList"></ul>
+            <div id="plwrap" width="100%">
+                <ul id="plList" width="100%"></ul>
             </div>
         </div>
     </div>
@@ -259,6 +259,66 @@
                     duration: "3:24",
                     file: "maestroeyes"
                 },
+                {
+                    track: 25,
+                    name: "Rubber Band - Jackal Queenston - Penis Music",
+                    duration: "2:11",
+                    file: "rubberband"
+                },
+                {
+                    track: 26,
+                    name: "Theme - Avengers",
+                    duration: "4:11",
+                    file: "avengers"
+                },
+                {
+                    track: 27,
+                    name: "Rasputin - Boney M - 100 Year Old Organ",
+                    duration: "2:45",
+                    file: "rbm100"
+                },
+                {
+                    track: 28,
+                    name: "Never Gonna Give You Up - Rick Astley - Rick Roll",
+                    duration: "3:32",
+                    file: "rickroll"
+                },
+                {
+                    track: 29,
+                    name: "Lisa Frank 420 / Modern Computer - Floral Shoppe - Macintosh Plus - Vektroid",
+                    duration: "7:21",
+                    file: "mpfs"
+                },
+                {
+                    track: 30,
+                    name: "Neon City - Wario Land: Shake It - Wii",
+                    duration: "2:14",
+                    file: "neon"
+                },
+                {
+                    track: 31,
+                    name: "Airytale Castle - Wario Land: Shake It - Wii",
+                    duration: "2:44",
+                    file: "airytale"
+                },
+                {
+                    track: 32,
+                    name: "Soggybog River - Wario Land: Shake It - Wii",
+                    duration: "1:54",
+                    file: "soggybog"
+                },
+                {
+                    track: 33,
+                    name: "Bloomsday Blowout - Wario Land: Shake It - Wii",
+                    duration: "1:36",
+                    file: "bloomsday"
+                },
+                {
+                    track: 34,
+                    name: "Creep Blue Sea - Wario Land: Shake It - Wii",
+                    duration: "2:00",
+                    file: "creepblue"
+                },
                 
             ],
             buildPlaylist = $.each(tracks, function(key, value) {
@@ -366,7 +426,7 @@
         // no audio support
         $(".column").addClass("hidden");
         var noSupport = $("#audio1").text();
-        $(".container").append('<p class="no-support">' + noSupport + "</p>");
+        $(".container").append('<p class="no-support" width="100%">' + noSupport + "</p>");
     }
 });
 </script>
