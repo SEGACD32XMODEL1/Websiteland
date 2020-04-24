@@ -112,11 +112,12 @@ padding:21px 0;
 }
 
 #plList li:hover {
-background-color:rgba(0,0,0,.1);
+background-color:rgba(255,255,255,.1);
 }
 
 .plItem {
 position:relative;
+width:100%;
 }
 
 .plTitle {
@@ -214,7 +215,7 @@ color:rgba(0,0,0,.1);
 /* Media Queries
 ================================================== */
 
-@media only screen and (max-width:600px) {
+@media only screen and (max-width:100%) {
     #nowPlay span#npAction { display:none; }
     #nowPlay span#npTitle { display:block; text-align:center; width:100%; }
 }
