@@ -1,92 +1,105 @@
-@import "https://SEGACD32XMODEL1.github.io/Websiteland/CSS/Fonts/fonts.css";
-@import "https://SEGACD32XMODEL1.github.io/Websiteland/CSS/Rainbow/rainbowtext.css";
+@import "../Fonts/fonts.css";
 
-html{
-    padding-top:0px;
+html {
+    padding-top: 0px;
 }
 
-h3{
-  font-size:1.5vw;
+h1 {
+    text-align: left;
+    color: rgba(100, 50, 255, .8);
+    font-size: 9vw;
+    white-space: nowrap;
+    resize: both;
+    line-height: normal;
+    margin-top: 0px;
+    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 60s infinite linear;
+    font-family: oreos;
 }
 
-h2{
-  text-align:left;
+h2 {
+    text-align: center;
 }
 
-h1{
-  text-align:left;
-  color:rgba(100, 50, 255, .8);
-  font-size:9vw;
-  white-space: nowrap;
-  resize: both;
-  line-height: normal;
+h3 {
+    font-size: 1.5vw;
+}
+
+h2 img {
+    width:50%;
+    align:center;
+}
+
+span.links {
+    display: block;
 }
 
 .rainbow {
-   /* Chrome, Safari, Opera */
-  -webkit-animation: rainbow 1s infinite; 
-  
-  /* Internet Explorer */
-  -ms-animation: rainbow 1s infinite;
-  
-  /* Standar Syntax */
-  animation: rainbow 1s infinite; 
+    text-align: center;
+    margin: auto;
+    font-size: 6vh;
+    font-weight: bold;
+    font-family: oreos;
+    overflow-wrap: anywhere;
+    text-align: center;
+    height: 150vh;
+    color: #f35626;
+    color: #f35626;
 }
 
-/* Chrome, Safari, Opera */
-@-webkit-keyframes rainbow{
-  0%{color: orange;}	
-  10%{color: purple;}	
-	20%{color: red;}
-	40%{color: yellow;}
-	60%{color: green;}
-	95%{color: blue;}
-	100%{color: white;}	
-}
-/* Internet Explorer */
-@-ms-keyframes rainbow{
-  0%{color: orange;}	
-  10%{color: purple;}	
-	20%{color: red;}
-	40%{color: yellow;}
-	60%{color: green;}
-	95%{color: blue;}
-	100%{color: white;}	
-}
-/* Standard Syntax */
-@keyframes rainbow{
-  0%{color: orange;}	
-  10%{color: purple;}	
-	20%{color: red;}
-	40%{color: yellow;}
-	60%{color: green;}
-	95%{color: blue;}
-	100%{color: white;}
+h1 div a {
+    box-shadow:
+        .5em 10px 16px 0 rgba(0, 0, 0, 0.75),
+        -8px -8px 12px 0 rgba(255, 255, 255, 0.75);
+    border-radius: 50px;
+    justify-content: center;
+    width: 99%;
+    padding-left: 1%;
+    padding-right: 1%;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-family: oreos;
+    font-size: 2.5vw;
+    line-height: 1.5;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    animation: shadow 3s linear infinite;
 }
 
-.active {
-  background-color: #4CAF50;
-  color: white;
+div.background {
+    background-repeat: repeat;
+    background-size: 99%;
+    width: 99%;
+    animation-name: background;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-direction: linear;
+    animation-timing-function: linear;
+    opacity: 1;
+    z-index: 1;
+    position: absolute;
+    down: 9;
 }
 
-.topnav .icon {
-  display: none;
+::-webkit-scrollbar {
+    width: 10px;
 }
 
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
-  }
+h1.title {
+    overflow-wrap: break-word;
+    text-align: center;
+    padding-top: 0px;
+    line-height: 16vh
+}
 
-    #gradient{
-background: #AAFFA9;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #11FFBD, #AAFFA9);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #11FFBD, #AAFFA9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	}
+@-webkit-keyframes hue {
+  0% {-webkit-filter: hue-rotate(0deg);}
+  100% {-webkit-filter: hue-rotate(-360deg);}
+}
 
-    #gradient{
-background: #AAFFA9;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #11FFBD, #AAFFA9);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #11FFBD, #AAFFA9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	}
+@keyframes shadow {
+    0% {box-shadow:5px 5px 5px 0 rgba(255, 255, 255, 0.75), -5px -5px 5px 0 rgba(255, 255, 255, 0.75);}
+    50% {box-shadow:2.5px 2.5px 2.5px 0 rgba(255, 255, 255, 0.75), -2.5px -2.5px 2.5px 0 rgba(255, 255, 255, 0.75);}
+    100% {box-shadow:5px 5px 5px 0 rgba(255, 255, 255, 0.75),-5px -5px 5px 0 rgba(255, 255, 255, 0.75);}
+}

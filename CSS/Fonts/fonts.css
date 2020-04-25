@@ -1,110 +1,110 @@
 @font-face {
   font-family: "Kimberley";
-    src: url("https://SEGACD32XMODEL1.github.io/Websiteland/CSS/Fonts/kimberle.ttf") format("truetype");
+    src: url("kimberle.ttf") format("truetype");
 }
 @font-face {
   font-family: "LemonMilk";
-    src: url("https://SEGACD32XMODEL1.github.io/Websiteland/CSS/Fonts/LemonMilk.ttf") format("truetype");
+    src: url("LemonMilk.ttf") format("truetype");
 }
 @font-face {
   font-family: "rc";
-    src: url("https://SEGACD32XMODEL1.github.io/Websiteland/CSS/Fonts/R&C-Demo.otf") format("opentype");
+    src: url("R&C-Demo.otf") format("opentype");
 }
 @font-face {
   font-family: "ks2";
-    src: url("https://SEGACD32XMODEL1.github.io/Websiteland/CSS/Fonts/KhadijaDisplay2.otf") format("opentype");
+    src: url("KhadijaDisplay2.otf") format("opentype");
 }
 @font-face {
   font-family: "baron";
-    src: url("https://SEGACD32XMODEL1.github.io/Websiteland/CSS/Fonts/Baron Neue.otf") format("opentype");
+    src: url("Baron Neue.otf") format("opentype");
 }
 
  @font-face {
   font-family: "cowboy";
-    src: url("https://SEGACD32XMODEL1.github.io/Websiteland/CSS/Fonts/Ol' Cowboy DEMO.ttf") format("truetype");
+    src: url("Ol' Cowboy DEMO.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "zilap";
-    src: url("https://SEGACD32XMODEL1.github.io/Websiteland/CSS/Fonts/Zilap Monograma DEMO.ttf") format("truetype");
+    src: url("Zilap Monograma DEMO.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "wages";
-  src: url("https://SEGACD32XMODEL1.github.io/Websiteland/CSS/Fonts/LOSTWAGE.TTF") format("truetype");
+  src: url("LOSTWAGE.TTF") format("truetype");
 }
 
 @font-face {
   font-family: "riesling";
-  src: url("https://SEGACD32XMODEL1.github.io/Websiteland/CSS/Fonts/riesling.ttf") format("truetype");
+  src: url("riesling.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "oreos";
-  src: url("https://SEGACD32XMODEL1.github.io/Websiteland/CSS/Fonts/Oreos.ttf") format("truetype");
+  src: url("Oreos.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "achi";
-  src: url("https://SEGACD32XMODEL1.github.io/Websiteland/CSS/Fonts/achi regular.ttf") format("truetype");
+  src: url("achi regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "santelia";
-  src: url("https://SEGACD32XMODEL1.github.io/Websiteland/CSS/Fonts/SantEliaRoughAltBoldThrDEMO.otf") format("truetype");
+  src: url("SantEliaRoughAltBoldThrDEMO.otf") format("truetype");
 }
 
 @font-face {
   font-family: "AmericanText";
-  src: url("https://SEGACD32XMODEL1.github.io/Websiteland/CSS/Fonts/AmericanText.ttf") format("truetype");
+  src: url("AmericanText.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "PS1";
-  src: url("https://SEGACD32XMODEL1.github.io/Websiteland/CSS/Fonts/PS1.ttf") format("truetype");
+  src: url("PS1.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Impact";
-  src: url("https://SEGACD32XMODEL1.github.io/Websiteland/CSS/Fonts/impact.ttf") format("truetype");
+  src: url("impact.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "vcr";
-  src: url("https://SEGACD32XMODEL1.github.io/Websiteland/CSS/Fonts/vcr.ttf") format("truetype");
+  src: url("vcr.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "spongebob";
-  src: url("https://SEGACD32XMODEL1.github.io/Websiteland/CSS/Fonts/Some Time Later.otf") format("opentype");
+  src: url("Some Time Later.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Pepsi";
-  src: url("https://SEGACD32XMODEL1.github.io/Websiteland/CSS/Fonts/PEPSI_pl.ttf") format("truetype");
+  src: url("PEPSI_pl.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Sweet Pancake";
-  src: url("https://SEGACD32XMODEL1.github.io/Websiteland/CSS/Fonts/Sweet Pancake Demo.ttf") format("truetype");
+  src: url("Sweet Pancake Demo.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Mario";
-  src: url("https://SEGACD32XMODEL1.github.io/Websiteland/CSS/Fonts/SuperMario256.ttf") format("truetype");
+  src: url("SuperMario256.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "ciberg";
-    src: url("https://SEGACD32XMODEL1.github.io/Websiteland/CSS/Fonts/CiberGotica.otf") format("opentype");
+    src: url("CiberGotica.otf") format("opentype");
 }
 
 @font-face {
   font-family: "Hanalei";
-  src: url("https://SEGACD32XMODEL1.github.io/Websiteland/CSS/Fonts/Hanalei-Regular.ttf") format("truetype");
+  src: url("Hanalei-Regular.ttf") format("truetype");
 }
 
 @font-face {
   font-family: "Pulse";
-  src: url("https://SEGACD32XMODEL1.github.io/Websiteland/CSS/Fonts/ThePulse.ttf") format("truetype");
+  src: url("ThePulse.ttf") format("truetype");
 }

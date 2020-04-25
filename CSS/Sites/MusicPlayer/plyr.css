@@ -36,9 +36,13 @@
     line-height: 1.7;
     max-width: 100%;
     min-width: 200px;
-    position: relative;
     text-shadow: none;
-    transition: box-shadow .3s ease
+    transition: box-shadow .3s ease;
+    z-index: 1;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
 }
 
 .plyr audio,
@@ -46,7 +50,10 @@
     border-radius: inherit;
     height: auto;
     vertical-align: middle;
-    width: 100%
+    width: 100%;
+    position: sticky;
+    top: 0;
+    align-self: flex-start;
 }
 
 .plyr button {
