@@ -120,6 +120,7 @@ h1.title {
   cursor: pointer;
   font-family:vcr;
   z-index:2;
+  position:absolute;
 }
     
 .button:hover {
