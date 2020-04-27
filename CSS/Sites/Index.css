@@ -119,6 +119,7 @@ h1.title {
   margin: 4px 2px;
   cursor: pointer;
   font-family:vcr;
+  zindex:2;
 }
     
 .button:hover {
