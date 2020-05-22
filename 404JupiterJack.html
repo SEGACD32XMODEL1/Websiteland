@@ -1,0 +1,124 @@
+<head>
+
+</head>
+<body height="100%">
+
+    <div id="main" width="100%">
+
+        <h1>
+        404 Error Not Found
+        </h1>
+
+        <video id="video" autoplay muted loop style="pointer-events: none;" width="50%">
+
+            <source src="videos/Jupiter Jack.mp4" type="video/mp4">
+
+        </video>
+
+        <br>
+
+        <br>
+
+        <button id="mute" onclick="toggleMute()">Unmute</button>
+
+        <a href="https://segacd32xmodel1.github.io/Websiteland/index.html">
+            <h2 class="home">
+                Go Home 🏠
+            </h2>
+        </a>
+
+    </div>
+
+    <div id="background" height="100%">
+
+        <video id="blur" autoplay muted loop style="pointer-events: none;" width="100%">
+
+            <source src="videos/Jupiter Jack.mp4" type="video/mp4">
+
+        </video>
+
+    </div>
+
+    <style>
+        * {
+            height: 100%;
+            background-color: white;
+        }
+        
+        h1 {
+            height: auto;
+            background-color: black;
+            color: white;
+            content: "404 Error Not Found";
+        }
+        
+        body, div {
+            text-align: center;
+            height: 100%;
+        }
+
+        #main {
+            text-align: center;
+            position: absolute;
+            width: 100%;
+            color: white;
+            z-index: 1;
+            background-color:rgba(0,0,0,0);
+            height: auto;
+        }
+
+        #video {
+            opacity: 100%;
+            height: auto;
+        }
+
+        #background {
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            z-index: 0;
+            filter: blur(10px);
+            background-color: white;
+        }
+        
+        #blur {
+            object-fit: fill;
+        }
+        
+        button {
+            width: 100%;
+            height: auto;
+        }
+        
+        body {
+            z-index: -1;
+            background-color: white;
+        }
+        
+        .home {
+            text-align: center;
+        }
+        
+        a {
+            text-align: center;
+        }
+
+    </style>
+
+    <script>
+        var video = document.getElementById('video');
+        var x = document.getElementById("mute");
+
+        function toggleMute() {
+            video.muted = !video.muted;
+
+            if (x.innerHTML === "Unmute") {
+                x.innerHTML = "Mute";
+            } else {
+                x.innerHTML = "Unmute";
+            }
+        }
+
+    </script>
+
+</body>
