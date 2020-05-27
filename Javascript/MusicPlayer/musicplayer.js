@@ -1,9 +1,9 @@
 jQuery(function ($) {
     "use strict";
-    var supportsAudio = !!document.createElement("audio").canPlayType;
+    let supportsAudio = !!document.createElement("audio").canPlayType;
     if (supportsAudio) {
         // initialize plyr
-        var player = new Plyr("#audio1", {
+        let player = new Plyr("#audio1", {
             controls: [
                                 "restart",
                                 "play",
@@ -16,10 +16,10 @@ jQuery(function ($) {
                             ]
         });
         // initialize playlist and controls
-        var index = 0,
+        let index = 0,
             playing = false,
             mediaPath =
-            "/Websiteland/Music/Index/",
+            "../../Music/Index/",
             extension = "",
             tracks = [{
                     track: 1,
@@ -233,7 +233,7 @@ jQuery(function ($) {
                                 },
                             ],
             buildPlaylist = $.each(tracks, function (key, value) {
-                var trackNumber = value.track,
+                let trackNumber = value.track,
                     trackName = value.name,
                     trackDuration = value.duration;
                 if (trackNumber.toString().length === 1) {
@@ -307,7 +307,7 @@ jQuery(function ($) {
                 }
             }),
             li = $("#plList li").on("click", function () {
-                var id = parseInt($(this).index());
+                let id = parseInt($(this).index());
                 if (id !== index) {
                     playTrack(id);
                 }
@@ -336,7 +336,7 @@ jQuery(function ($) {
     } else {
         // no audio support
         $(".column").addClass("hidden");
-        var noSupport = $("#audio1").text();
+        let noSupport = $("#audio1").text();
         $(".container").append('<p class="no-support" width="100%">' + noSupport + "</p>");
     }
 });

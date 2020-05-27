@@ -1,0 +1,50 @@
+body {
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.text {
+    text-align: center;
+    position: relative;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 1.5vw;
+    height: 1vh;
+}
+
+p {
+    width: 100%;
+    text-align: left;
+}
+
+hr {
+    width: 25%;
+}
+
+hr.vr {
+    width: 0px;
+    height: 63vh; /* or height in % */
+    border-left: 1px solid black;
+}
+
+.image {
+    text-align: center;
+    position: relative;
+    flex-grow: 1;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+img {
+width: 23vw;
+height: 45vh;
+}
+
+h1 {
+    font-size: 2.4vw;
+}

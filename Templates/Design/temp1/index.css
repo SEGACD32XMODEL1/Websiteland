@@ -1,0 +1,19 @@
+body {
+    text-align: center;
+}
+
+.content {
+    text-align: center;
+    width: 50%;
+    position: absolute;
+    left: 25%;
+}
+
+p {
+    width: 100%;
+    text-align: left;
+}
+
+hr {
+    width: 25%;
+}

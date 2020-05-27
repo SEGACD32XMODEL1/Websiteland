@@ -1,8 +1,8 @@
 //My first Javascript Code!
-console.log('Hello World');
+console.log("Hello World");
 
 //Variables:
-let name = 'Mosh';
+let name = "Mosh";
 console.log(name);
 
 /* Notes:
@@ -34,7 +34,7 @@ console.log(interestRate2);
 6.Symbol
 */
 
-let nameReal = 'Jacob'; //String Literal
+let nameReal = "Jacob"; //String Literal
 let age = 17; //Number Literal
 let isApproved = true; //Boolean Literal True or False
 let rock = undefined; //Default Value if not assigned
@@ -48,25 +48,31 @@ let cooking = null; //Used to clear values
 
 //Object:
 let shape = {
-name: 'Square',
-sides: 4
+    name: "Square",
+    sides: 4
 };
 console.log(shape);
 
 //Dot.Notation
-shape.name = 'Triangle';
+shape.name = "Triangle";
 shape.sides = 3;
 console.log(shape.name);
 console.log(shape.sides);
 
 //Brackets[]Notation
-shape['name'] = 'Hexagon';
-shape['sides'] = 6;
-console['log'](shape['name']);
-console['log'](shape['sides']);
+shape["name"] = "Hexagon";
+shape["sides"] = 6;
+console["log"](shape["name"]);
+console["log"](shape["sides"]);
 
 //Arrays:
-let groceryList = ['Avacado', 'Lemonade', 'Salad', 'Eggrolls', 'Chocolate Pudding'];
+let groceryList = [
+    "Avacado",
+    "Lemonade",
+    "Salad",
+    "Eggrolls",
+    "Chocolate Pudding"
+];
 console.log(groceryList);
 
 //You can change individual items
@@ -83,28 +89,28 @@ console.log(groceryList[5]);
 
 //Performing a task
 function meme() {
-console.log('Dank');
+    console.log("Dank");
 }
 
 meme();
 
 //Variables for the function
 function chocolatePudding(why) {
-console.log('Why are you making chocolate pudding?' + ' ' + why)
+    console.log("Why are you making chocolate pudding?" + " " + why);
 }
 
-chocolatePudding('I lost control of my life');
-chocolatePudding('I am hungry');
+chocolatePudding("I lost control of my life");
+chocolatePudding("I am hungry");
 
 //Multiple variables
 function how(first, last) {
-    console.log(first + ' ' + 'Cut the watermelon. ' + last);
+    console.log(first + " " + "Cut the watermelon. " + last);
 }
 
-how('Buy the watermelon.', 'Eat the watermelon.');
+how("Buy the watermelon.", "Eat the watermelon.");
 
 //Calculating a value
-function square(number){
+function square(number) {
     return number * number;
 }
 

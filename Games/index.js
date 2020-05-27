@@ -2,7 +2,7 @@ let cursor = {
     amount: 0,
     cost: 100,
     multiplier: 1
-}
+};
 
 let curamo = cursor.amount;
 
@@ -19,7 +19,7 @@ let clicks = 10;
 function click(number) {
     clicks = clicks + number;
     clickcount.innerHTML = clicks;
-};
+}
 
 let mouseclick = click(1);
 
@@ -27,17 +27,29 @@ function buyCursor() {
     if (clicks >= curcost) {
         curamo++;
         clicks = clicks - curcost;
-        curcost = Math.floor(curcost * 1.1)
+        curcost = Math.floor(curcost * 1.1);
         clickcount.innerHTML = clicks;
         document.getElementById("cursors").innerHTML = curamo;
         document.getElementById("cursorCost").innerHTML = curcost;
-        console.log('successful cursor buy' + " " + "|" + " " + clicks + " " + "clicks left," + " " + curamo + " " + "cursors");
+        console.log(
+            "successful cursor buy" +
+                " " +
+                "|" +
+                " " +
+                clicks +
+                " " +
+                "clicks left," +
+                " " +
+                curamo +
+                " " +
+                "cursors"
+        );
     } else {
-        console.log('not enough clicks or another error!')
+        console.log("not enough clicks or another error!");
     }
 }
 
-window.setInterval(function () {
+window.setInterval(function() {
     click(curamo * curmul);
 }, 1000);
 
@@ -47,7 +59,15 @@ function upgradeClicker() {
         document.getElementById("clicker").style.display = "none";
         document.getElementById("mouse").style.display = "none";
         document.getElementById("mousebutton").style.display = "block";
-        console.log("Mouse bought successfully!" + " " + "|" + " " + clicks + " " + "clicks left");
+        console.log(
+            "Mouse bought successfully!" +
+                " " +
+                "|" +
+                " " +
+                clicks +
+                " " +
+                "clicks left"
+        );
     } else {
         console.log("Not enough clicks or error!");
     }
@@ -76,7 +96,7 @@ function doubleclick() {
         clicks = clicks - 500;
         document.getElementById("doublemouse").style.display = "none";
         document.getElementById("doublemousebutton").style.display = "none";
-        console.log(mousebuttonmultiplier)
+        console.log(mousebuttonmultiplier);
     } else {
         console.log("not enough clicks or another error!");
     }

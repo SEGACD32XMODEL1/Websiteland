@@ -1,33 +1,53 @@
 <!DOCTYPE html>
 <html lang="eng">
+    <head>
+        <meta charset="utf-8" />
+        <title>First Clicker Game</title>
+        <meta name="author" content="SEGACD32XMODEL1" />
+        <meta name="description" content="My First Game" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css" />
+        <link rel="icon" type="image/x-icon" href="" />
+    </head>
 
-<head>
-	<meta charset="utf-8">
-	<title>First Clicker Game</title>
-	<meta name="author" content="SEGACD32XMODEL1">
-	<meta name="description" content="My First Game">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="index.css">
-	<link rel="icon" type="image/x-icon" href=""/>
-</head>
+    <script>
+        document.write(
+            '<script src="http://' +
+                (location.host || "localhost").split(":")[0] +
+                ':35729/livereload.js?snipver=1"></' +
+                "script>"
+        );
+    </script>
 
-<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
-    
-<body id="body">
-	<header>Idle clicker game</header>
-	<main>
-    <h1>Clicks: <span id="clicks">10 </span> <br>
-        Cursors: <span id="cursors">0 </span> | Cursor Cost: <span id="cursorCost">100</span> Clicks 
-        <span id="double"> | Double Cursor Click Cost: 1000 Clicks <br> </span>
-        <span id="clicker">Mouse Cost: 10 Clicks</span>
-        <span id="doublemouse"> | Double Mouse Click Cost: 500 Clicks </span> <br>
-    <button onclick="buyCursor()">Buy Cursor</button>
-    <button id="mouse" onclick="upgradeClicker()">Buy Mouse</button>
-    <button id="doublebutton" onclick="doubleclickauto()">Double Cursor Clicks</button>
-    <button id="mousebutton" onclick="mousebutton()">Left Click the Mouse</button>
-    <button id="doublemousebutton" onclick="doubleclick()">Double Mouse Clicks</button>
-	<footer><br>My first game</footer>
-	<script type="text/javascript" src="index.js"></script>
-</body>
-
+    <body id="body">
+        <header>Idle clicker game</header>
+        <main>
+            <h1>
+                Clicks: <span id="clicks">10 </span> <br />
+                Cursors: <span id="cursors">0 </span> | Cursor Cost:
+                <span id="cursorCost">100</span> Clicks
+                <span id="double">
+                    | Double Cursor Click Cost: 1000 Clicks <br />
+                </span>
+                <span id="clicker">Mouse Cost: 10 Clicks</span>
+                <span id="doublemouse">
+                    | Double Mouse Click Cost: 500 Clicks
+                </span>
+                <br />
+                <button onclick="buyCursor()">Buy Cursor</button>
+                <button id="mouse" onclick="upgradeClicker()">Buy Mouse</button>
+                <button id="doublebutton" onclick="doubleclickauto()">
+                    Double Cursor Clicks
+                </button>
+                <button id="mousebutton" onclick="mousebutton()">
+                    Left Click the Mouse
+                </button>
+                <button id="doublemousebutton" onclick="doubleclick()">
+                    Double Mouse Clicks
+                </button>
+                <footer><br />My first game</footer>
+                <script type="text/javascript" src="index.js"></script>
+            </h1>
+        </main>
+    </body>
 </html>

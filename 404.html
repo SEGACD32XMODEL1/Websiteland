@@ -1,25 +1,31 @@
 <!DOCTYPE html>
 <html lang="eng">
+    <head>
+        <meta charset="utf-8" />
+        <title>404</title>
+        <meta name="author" content="SEGACD32XMODEL1" />
+        <meta name="description" content="404 page redirect" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    </head>
 
-<head>
-	<meta charset="utf-8">
-	<title>404</title>
-	<meta name="author" content="SEGACD32XMODEL1">
-	<meta name="description" content="404 page redirect">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+    <body>
+        <header></header>
+        <main>404</main>
+        <footer></footer>
+        <script>
+            let pages = [
+                "404Home.html",
+                "404SelfControl.html",
+                "404JupiterJack.html"
+            ];
 
-<body>
-	<header></header>
-	<main>404</main>
-	<footer></footer>
-	<script>
-    let pages = ["404Home.html", "404SelfControl.html", "404JupiterJack.html"];
-    let math = Math.floor(Math.random() * pages.length);
+            let math = Math.floor(Math.random() * pages.length);
 
-    window.location.href = pages[math];
+            function randompage() {
+                window.location.href = pages[math];
+            }
 
-    </script>
-</body>
-
+            setTimeout(randompage, 5000);
+        </script>
+    </body>
 </html>

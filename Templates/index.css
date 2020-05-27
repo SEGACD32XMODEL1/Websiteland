@@ -1,0 +1,42 @@
+.parent {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.Design, .Styled {
+    text-align: center;
+    width: 100%;
+}
+
+.subparent {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 100%;
+}
+
+hr.vr {
+    width: 0px;
+    height: 100%; /* or height in % */
+    border-left: 0.2vw solid black;
+}
+
+img {
+    height: 75vh;
+    width: 37vw;
+}
+
+footer {
+    height: 2vh;
+    font-size: 2.5vh;
+}
+
+h1 {
+    font-size: 5vh;
+}
+
+h2 {
+    font-size: 4vh;
+}
