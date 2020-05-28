@@ -33,14 +33,15 @@
         @import "CSS/Sites/Index.css";
         @import "CSS/Sites/MusicPlayer/musicplayer.css";
         @import "CSS/Sites/MusicPlayer/plyr.css";
-    </style>
 
-    <script type="text/javascript" src="Javascript/jquery.js"></script>
-    <script type="text/javascript" src="Javascript/MusicPlayer/html5media.js"></script>
-    <script type="text/javascript" src="Javascript/MusicPlayer/plyr.js"></script>
-    <script type="text/javascript" src="Javascript/Tools/UserAgent.js"></script>
-    <script type="text/javascript" src="Javascript/Tools/ScreenWidth.js"></script>
-    <script type="text/javascript" src="Javascript/MusicPlayer/musicplayer.js"></script>
+    </style>
+    <div class="finalload" ONLOAD="unveil();" STYLE="display: none;">
+        <script type="text/javascript" src="Javascript/jquery.js"></script>
+        <script type="text/javascript" src="Javascript/MusicPlayer/html5media.js"></script>
+        <script type="text/javascript" src="Javascript/MusicPlayer/plyr.js"></script>
+        <script type="text/javascript" src="Javascript/Tools/UserAgent.js"></script>
+        <script type="text/javascript" src="Javascript/Tools/ScreenWidth.js"></script>
+        <script type="text/javascript" src="Javascript/MusicPlayer/musicplayer.js"></script>
 </head>
 
 <body>
@@ -75,12 +76,12 @@
 
     <div class="background">
         <h2>
-        <img src="https://media.giphy.com/media/V53jWRdPWwO0U/200.gif">
-        <img src="https://cdn.funnyisms.com/376056f6-b1c0-4b68-bbe9-0c42330d0345.gif">
-        <img src="https://thumbs.gfycat.com/BlushingMetallicEyra-small.gif">
-        <img src="https://i.kym-cdn.com/photos/images/newsfeed/001/400/709/802">
-        <img src="images/megaminddancing.gif">
-        <img src="https://i.gifer.com/7b7F.gif">
+            <img src="https://media.giphy.com/media/V53jWRdPWwO0U/200.gif">
+            <img src="https://cdn.funnyisms.com/376056f6-b1c0-4b68-bbe9-0c42330d0345.gif">
+            <img src="https://thumbs.gfycat.com/BlushingMetallicEyra-small.gif">
+            <img src="https://i.kym-cdn.com/photos/images/newsfeed/001/400/709/802">
+            <img src="images/megaminddancing.gif">
+            <img src="https://i.gifer.com/7b7F.gif">
         </h2>
     </div>
 
@@ -104,5 +105,20 @@
             </div>
         </div>
     </div>
-<div class="center"><a href="indexMS2L.html" class="button">Length: Short to Long</a></div>
+    <div class="center"><a href="indexMS2L.html" class="button">Length: Short to Long</a></div>
+    </div>
+
+    <div class="container">
+        <div class="warning">
+            <h2 class="loading">Loading</h2>
+        </div>
+    </div>
+
+    <script>
+       window.onload = function() { 
+       const loader = document.querySelector(".container");    
+       loader.className += " hidden";
+
+    </script>
+
 </body>

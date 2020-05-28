@@ -1,19 +1,209 @@
+/*Fonts*/
+
 @import "../Fonts/fonts.css";
+
+/*Loading Screen*/
+
+.warning {
+    position: fixed;
+    top: 50%;
+    bottom: 50%;
+    width: 99%;
+    background-color: #6da807;
+    border: 1px solid #6da807;
+    border-radius: 10px;
+    box-shadow: 1vw 3vh 10vh rgba(109, 168, 7, 0.8);
+    background-size: 3em 3em;
+    background-image: linear-gradient(-45deg,
+            transparent 0em,
+            transparent 0.8em,
+            #96d923 0.9em,
+            #96d923 2.1em,
+            transparent 2.1em,
+            transparent 2.9em,
+            #96d923 3.1em);
+    animation: warning-animation 0.75s infinite linear;
+}
+
+@keyframes warning-animation {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 3em 0;
+    }
+}
+
+.warning:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;
+    border-radius: 10px;
+    background-image: linear-gradient(to bottom,
+            #6da807,
+            rgba(171, 226, 77, 0.6) 15%,
+            transparent 60%,
+            #6da807);
+}
+
+body,
+html {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+}
+
+body {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: radial-gradient(circle, #c0e979, #96d923);
+}
+
+.container {
+    width: 80vw;
+    margin: 45vh auto 0;
+    z-index: 99;
+    display: block;
+}
+
+.container.hidden {
+    display: none;
+    visibility: hidden;
+}
+
+.container .warning {
+    height: 10vh;
+}
+
+h2.loading {
+    color: floralwhite;
+    font-family: Kimberley;
+    text-shadow: 4px 0px 0px black;
+    animation: loading-animation 10s infinite linear;
+}
+
+@keyframes loading-animation {
+    0% {
+        font-family: Kimberley;
+    }
+
+    4.5% {
+        font-family: Lemonmilk;
+    }
+
+    9% {
+        font-family: RC;
+    }
+
+    13.5% {
+        font-family: Ks2;
+    }
+
+    18% {
+        font-family: Baron;
+    }
+
+    22.5% {
+        font-family: cowboy;
+    }
+
+    27% {
+        font-family: zilap;
+    }
+
+    31.5% {
+        font-family: wages;
+    }
+
+    36% {
+        font-family: riesling;
+    }
+
+    40.5% {
+        font-family: oreos;
+    }
+
+    45% {
+        font-family: achi;
+    }
+
+    49.5% {
+        font-family: santelia;
+    }
+
+    54% {
+        font-family: AmericanText;
+    }
+
+    58.5% {
+        font-family: PS1;
+    }
+
+    63% {
+        font-family: impact;
+    }
+
+    67.5% {
+        font-family: vcr;
+    }
+
+    72% {
+        font-family: Spongebob;
+    }
+
+    76.5% {
+        font-family: Pepsi;
+    }
+
+    81% {
+        font-family: Sweet Pancake;
+    }
+
+    85.5% {
+        font-family: Mario;
+    }
+
+    90% {
+        font-family: ciberg;
+    }
+
+    94.5% {
+        font-family: Hanalei;
+    }
+
+    99% {
+        font-family: Pulse;
+    }
+
+    100% {
+        font-family: Kimberley;
+    }
+}
+
+/*Website*/
 
 html {
     padding-top: 0px;
-    overflow-x:hidden;
+    overflow-x: hidden;
 }
 
 h1 {
     text-align: left;
-    color: rgba(100, 50, 255, .8);
+    color: rgba(100, 50, 255, 0.8);
     font-size: 9vw;
     white-space: nowrap;
     resize: both;
     line-height: normal;
     margin-top: 0px;
-    background-image: -webkit-linear-gradient(92deg,#f35626,#feab3a);
+    background-image: -webkit-linear-gradient(92deg, #f35626, #feab3a);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     -webkit-animation: hue 60s infinite linear;
@@ -29,13 +219,13 @@ h3 {
 }
 
 h2 img {
-    width:50%;
-    align:center;
+    width: 50%;
+    align: center;
 }
 
 span.links {
     display: block;
-    background-color:rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .rainbow {
@@ -52,8 +242,7 @@ span.links {
 }
 
 h1 div a {
-    box-shadow:
-        .5em 10px 16px 0 rgba(0, 0, 0, 0.75),
+    box-shadow: 0.5em 10px 16px 0 rgba(0, 0, 0, 0.75),
         -8px -8px 12px 0 rgba(255, 255, 255, 0.75);
     border-radius: 50px;
     justify-content: center;
@@ -86,51 +275,67 @@ div.background {
 
 ::-webkit-scrollbar {
     width: 10px;
-    background-color:black;
+    background-color: black;
 }
 
 h1.title {
     overflow-wrap: break-word;
     text-align: center;
     padding-top: 0px;
-    line-height: 16vh
+    line-height: 16vh;
 }
 
 @-webkit-keyframes hue {
-  0% {-webkit-filter: hue-rotate(0deg);}
-  100% {-webkit-filter: hue-rotate(-360deg);}
+    0% {
+        -webkit-filter: hue-rotate(0deg);
+    }
+
+    100% {
+        -webkit-filter: hue-rotate(-360deg);
+    }
 }
 
 @keyframes shadow {
-    0% {box-shadow:5px 5px 5px 0 rgba(255, 255, 255, 0.75), -5px -5px 5px 0 rgba(255, 255, 255, 0.75);}
-    50% {box-shadow:2.5px 2.5px 2.5px 0 rgba(255, 255, 255, 0.75), -2.5px -2.5px 2.5px 0 rgba(255, 255, 255, 0.75);}
-    100% {box-shadow:5px 5px 5px 0 rgba(255, 255, 255, 0.75),-5px -5px 5px 0 rgba(255, 255, 255, 0.75);}
+    0% {
+        box-shadow: 5px 5px 5px 0 rgba(255, 255, 255, 0.75),
+            -5px -5px 5px 0 rgba(255, 255, 255, 0.75);
+    }
+
+    50% {
+        box-shadow: 2.5px 2.5px 2.5px 0 rgba(255, 255, 255, 0.75),
+            -2.5px -2.5px 2.5px 0 rgba(255, 255, 255, 0.75);
+    }
+
+    100% {
+        box-shadow: 5px 5px 5px 0 rgba(255, 255, 255, 0.75),
+            -5px -5px 5px 0 rgba(255, 255, 255, 0.75);
+    }
 }
 
 .button {
-  background-color: teal;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  font-family:vcr;
-  z-index:2;
-  position:absolute;
+    background-color: teal;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: vcr;
+    z-index: 2;
+    position: absolute;
 }
-    
+
 .button:hover {
-background-color:deeppink;
+    background-color: deeppink;
 }
-    
+
 .button:active {
-background-color:teal;
+    background-color: teal;
 }
-    
+
 .center {
-text-align:center;        
+    text-align: center;
 }
