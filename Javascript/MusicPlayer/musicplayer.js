@@ -19,7 +19,7 @@ jQuery(function ($) {
         let index = 0,
             playing = false,
             mediaPath =
-            "../../Music/Index/",
+            "Music/Index/",
             extension = "",
             tracks = [{
                     track: 1,

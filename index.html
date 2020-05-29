@@ -33,9 +33,7 @@
         @import "CSS/Sites/Index.css";
         @import "CSS/Sites/MusicPlayer/musicplayer.css";
         @import "CSS/Sites/MusicPlayer/plyr.css";
-
     </style>
-    <div class="finalload" ONLOAD="unveil();" STYLE="display: none;">
         <script type="text/javascript" src="Javascript/jquery.js"></script>
         <script type="text/javascript" src="Javascript/MusicPlayer/html5media.js"></script>
         <script type="text/javascript" src="Javascript/MusicPlayer/plyr.js"></script>
@@ -45,79 +43,85 @@
 </head>
 
 <body>
+    <div id="show" class="show">
+        <span class="links">
+            <div class=".rainbow">
+                <h1 class="title"> Websiteland
+                    <div>
+                        <a href="Cornhub/index.html" class="site__title mega">Cornhub</a>
 
-    <span class="links">
-        <div class=".rainbow">
-            <h1 class="title"> Websiteland
-                <div>
-                    <a href="Cornhub/index.html" class="site__title mega">Cornhub</a>
+                        <a href="Twitter/Crimeaday.html" class="site__title mega">Federal Crimes</a>
+                        <br>
+                        <a href="main.html" class="site__title mega">GamesAndMore</a>
 
-                    <a href="Twitter/Crimeaday.html" class="site__title mega">Federal Crimes</a>
-                    <br>
-                    <a href="main.html" class="site__title mega">GamesAndMore</a>
+                        <a href="KahootSpam/index.html" class="site__title mega">KahootSpam</a>
+                        <br>
+                        <a href="RB420/index.html" class="site__title mega">Roasted Beef 420</a>
 
-                    <a href="KahootSpam/index.html" class="site__title mega">KahootSpam</a>
-                    <br>
-                    <a href="RB420/index.html" class="site__title mega">Roasted Beef 420</a>
+                        <a href="School/index.html" class="site__title mega">School</a>
 
-                    <a href="School/index.html" class="site__title mega">School</a>
+                        <a href="Time.html" class="site__title mega">Time</a>
+                        <br>
+                        <a href="SpecialUnoCards.html" class="site__title mega">Uno Special Cards</a>
 
-                    <a href="Time.html" class="site__title mega">Time</a>
-                    <br>
-                    <a href="SpecialUnoCards.html" class="site__title mega">Uno Special Cards</a>
+                        <a href="Websites/index.html" class="site__title mega">Websites</a>
+                    </div>
+                </h1>
+            </div>
+        </span>
 
-                    <a href="Websites/index.html" class="site__title mega">Websites</a>
-                </div>
-            </h1>
+        <hr>
+
+        <div class="background">
+            <h2>
+                <img src="https://media.giphy.com/media/V53jWRdPWwO0U/200.gif">
+                <img src="https://cdn.funnyisms.com/376056f6-b1c0-4b68-bbe9-0c42330d0345.gif">
+                <img src="https://thumbs.gfycat.com/BlushingMetallicEyra-small.gif">
+                <img src="https://i.kym-cdn.com/photos/images/newsfeed/001/400/709/802">
+                <img src="images/megaminddancing.gif">
+                <img src="https://i.gifer.com/7b7F.gif">
+            </h2>
         </div>
-    </span>
 
-    <hr>
-
-    <div class="background">
-        <h2>
-            <img src="https://media.giphy.com/media/V53jWRdPWwO0U/200.gif">
-            <img src="https://cdn.funnyisms.com/376056f6-b1c0-4b68-bbe9-0c42330d0345.gif">
-            <img src="https://thumbs.gfycat.com/BlushingMetallicEyra-small.gif">
-            <img src="https://i.kym-cdn.com/photos/images/newsfeed/001/400/709/802">
-            <img src="images/megaminddancing.gif">
-            <img src="https://i.gifer.com/7b7F.gif">
-        </h2>
-    </div>
-
-    <div class="container">
-        <div class="column add-bottom">
-            <div id="mainwrap">
-                <div id="nowPlay">
-                    <span id="npAction">Paused...</span><span id="npTitle"></span>
-                </div>
-                <div id="audiowrap">
-                    <div id="audio0">
-                        <audio id="audio1" preload controls>Your browser does not support HTML5 Audio! 😢</audio>
+        <div class="container">
+            <div class="column add-bottom">
+                <div id="mainwrap">
+                    <div id="nowPlay">
+                        <span id="npAction">Paused...</span><span id="npTitle"></span>
                     </div>
-                    <div id="tracks">
-                        <a id="btnPrev">&vltri;</a><a id="btnNext">&vrtri;</a>
+                    <div id="audiowrap">
+                        <div id="audio0">
+                            <audio id="audio1" preload controls>Your browser does not support HTML5 Audio! 😢</audio>
+                        </div>
+                        <div id="tracks">
+                            <a id="btnPrev">&vltri;</a><a id="btnNext">&vrtri;</a>
+                        </div>
                     </div>
-                </div>
-                <div id="plwrap">
-                    <ul id="plList"></ul>
+                    <div id="plwrap">
+                        <ul id="plList"></ul>
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="center"><a href="indexMS2L.html" class="button">Length: Short to Long</a></div>
     </div>
-    <div class="center"><a href="indexMS2L.html" class="button">Length: Short to Long</a></div>
     </div>
-
-    <div class="container">
+    
+    <div class="loader">
         <div class="warning">
             <h2 class="loading">Loading</h2>
         </div>
     </div>
 
     <script>
-       window.onload = function() { 
-       const loader = document.querySelector(".container");    
-       loader.className += " hidden";
+        window.addEventListener("load", function() {
+            const loader = document.querySelector(".loader");
+            loader.className += " hidden";
+            console.log(loader);
+            document.getElementById("show").style.display = "block";
+            document.getElementById("show").style.visibility = "visible";
+            console.log(show);
+        })
 
     </script>
 

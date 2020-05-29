@@ -1,9 +1,4 @@
-/*Fonts*/
-
-@import "../Fonts/fonts.css";
-
 /*Loading Screen*/
-
 .warning {
     position: fixed;
     top: 50%;
@@ -51,35 +46,18 @@
             #6da807);
 }
 
-body,
-html {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    height: 100%;
-}
-
-body {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-image: radial-gradient(circle, #c0e979, #96d923);
-}
-
-.container {
+.loader {
     width: 80vw;
-    margin: 45vh auto 0;
     z-index: 99;
-    display: block;
 }
 
-.container.hidden {
-    display: none;
-    visibility: hidden;
+.loader.hidden {
+    animation: fadeOut 1s;
+    animation: fill-mode: forwards;
+    z-index: -99;
 }
 
-.container .warning {
+.loader .warning {
     height: 10vh;
 }
 
@@ -188,7 +166,18 @@ h2.loading {
     }
 }
 
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
 /*Website*/
+.show {
+    display: none;
+    visibility: hidden;
+}
 
 html {
     padding-top: 0px;
