@@ -193,3 +193,56 @@ console.log(todoJSON);
         return todo.isCompleted === true;
         });
         console.log(todoCompleted);
+//Conditionals:
+const x = 10;
+const y = 20;
+if(x == 10) {
+    console.log('x is 10');
+} else if(x > 10) {
+    console.log('x is GREATER THAN 10');
+} else {
+    console.log('x is NOT 10');
+};
+if(x == 10 && y == 20) {
+    console.log('x & y = 10 & 20 respectively');
+} else {
+    console.log('XY is not 10s');
+}
+
+const color = x > 10 ? 'red' : 'blue';
+console.log(color);
+
+switch(color) {
+    case 'red':
+        console.log('color is red');
+        break;
+    case 'blue':
+        console.log('color is blue');
+        break;
+    default:
+        console.log('color is NEITHER RED or BLUE');
+        break;
+}
+
+/* && = AND
+   || = OR
+   == = EQUALS
+   >  = MORE THAN
+   <  = LESS THAN
+*/
+
+//Functions:
+function addNums(num1, num2) {
+    console.log(num1 + num2);
+}
+addNums(49,20);
+
+//Document Object Model:
+    //Selectors:
+        //Single Element:
+        const h1 = document.getElementById('h1');
+        const h2 = document.querySelector('h2');
+        //Multiple Elements:
+        const h3 = document.querySelectorAll('h3');
+        const h4 = document.getElementsByClassName('h4');
+        const h5 = document.getElementsByTagName('h5');

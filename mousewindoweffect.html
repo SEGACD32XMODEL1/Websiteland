@@ -1,0 +1,59 @@
+<body>
+    <style>
+        html {
+            cursor: none;
+        }
+    </style>
+<script type="text/javascript">
+
+    var imageWidthHalf, imageHeightHalf;
+
+    var canvas = document.createElement( 'canvas' );
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    canvas.style.display = 'block';
+    document.body.appendChild( canvas );
+
+    var context = canvas.getContext( '2d' );
+
+    var image = document.createElement( 'img' );
+
+    image.addEventListener('load', function() {
+
+        imageWidthHalf = Math.floor( this.width / 2 );
+        imageHeightHalf = Math.floor( this.height / 2 );
+
+        document.addEventListener( 'mousemove', onMouseEvent, false );
+        document.addEventListener( 'touchstart', onTouchEvent, false );
+        document.addEventListener( 'touchmove', onTouchEvent, false );
+
+    }, false );
+
+    image.src = "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAHuUlEQVRYR83Xe2xT1x0H8O8999rXrziJkxTS8FqAQpqWAAIhpqlDVSYktEmbRGGqUNVCmdCgUCJQ1ABpMobaMBZghTHooIw2hQLKqomthWYDSgWFEViThachJOThvOzY8fV9nzsd40zh0RBC+jjS+ceyjz/+nd/9/X7mLMsSOI4z8D1ZHAAuEAgEKaWcoijzsrOzj32Xtjioubm5i+d5zjRNmKbJUWqZbWF52oy8CbcAzvo2gQyEnJycZ6qqqk4xFKUUhkFhmAZ03YBp0tvvnzNnvfXexDBOwPymgXEQgOTGxsYGQRDAEQEGpRw1GcqEoRvQdB26plq6ST9//eSk+WciUFHC0W8icr0g/rrf3yLaHSInCNxLFbe8K3IVZfKzE3WDWjAMA5qmQ1dVS1VlqIpsaQbdMvtPP1qPQ6BDGbVeEMSk9Kcu15w/xwt2rjnQya+VnnVHy5fDJtjw9polsfRUD9U0LY7S1JilyjFLUWJQZMWUFGPBgis/PzoUUfs/CPB5r1471yjYRU6SNbJw5duetOJd0LskBHeWgvIinkhxWRsLfylRXbM0VbFUJWYpsgxZliDHJGiqora2tj5dVFTUNdjr7AMCf+Zs9RmfzzeBcgJZ8NpbnpSFpbCNSoeiWojs2ApD6YGlhEBjncibOJL++pW5UUNTGchiIDkmWZIUhSRJsCwrWFBQMA7AIz2lfUFAxozxtSfePy+ITu5Gc5ewblOFM2V1GdSKPXjmtUWQuxV89bsyWIYMqnaDyt2gagg/+8kPteefmykrSsySY7E4qHf39PRAEIQzGzZs+CnA8q3/dTcoNT+5+vjmBpvoIrIG8qviPW4ipmB68Sp4BIBagGQAX72zD3I4DBrrApVaQCNNoHIHLC2KRQtflkaMyNJPnTrFHTlypCYUCp3XNO0CIeTq2LFjn5s8eXLrgQMHPvw61t2gF17gK196df/okSNnc4JIFhft8Bi8B5NWrkZahguEAJQDwjpwcc8XMKMR0HAzaPAKaPgGqNQKqvWAGioIx6GlpeWgLMs3AXQAaAPQAuA2gE4AEgD9XtjdoHhFmp595rOdF+wOF9fUHhbWbfrQxTlSMGN9CVwiEKNAdcVFLFk2JZ4d+3adR/D6NdDOGtDQVdAoQ0VADQ3UNMAKrSiKUb/fPwGAlrg2dnUqAPnhoIxZnuOH1zeJTg+nGZRb9sbmJJL0JByZOch9/WXUfHQRy5dPQbJw56ioDvi7gUMlu0E76kDDN0Fj7XcipSsJlBmHsdbkdruv3bhxIxdgVf/+hL8/QighO3eP+cNT48YvYCVg5ZqNXoWkgqTnwho2CSuKfox0EWAf1ChwOwp8ctSP4TPH4b8bfg+lowE02gQa67iT+HGUHgf1ohjMsiykpKQc9vv98/sm+wNAAJwjsj75eG+dw+lCe1eELy3f6yGpE0Eyp2PFb+YgTQR0CtRHgP+0xuDLcIGngKoDofoO1JS/mUC1gaoRtLU2dUSj0ZrEFXUDaAXAcusagAaHw2EqitIEwHgwaMwYR+WWrQGn0w2DctzqdWVe4h0N8sQ0ZEyahkWLp6ItBlQHZGSkO+MYK7FZ1DqjQG3BfFyv/fKCIbW3wVRYMtcnNsP0JHKIJbWS2CzJpQeDYHFri39bNHVq3mq7XcTG8m1J7WGdEF9OHDW3+EWc/bIB2TNHw24B8TZrAQYFukMaTr+xgvqvXPwCUst1aN1nofdcANAIIJJI7L7FkhkIG4NYXn0NiKWre3hFxbtXnC4XQqFusrH8nSTOnYU4yjceU4oWIdUGkERrNVlkLjXgr8Xrrsrh1noo4dOA+hks22WEqhlkQBW7HxDEXbt2BdxuN9Nxb5auT+bFZHCeJ0G8P0DSiPGYUrAEdlabKNBVexP71xRXQ2m7BUP7B1wj/glfQQuqp91Xa/qr1f2BuPz8/Dnz5s37wOl0cpWVla7aS1dtvN0Lzj0cJGkU8taWISXNgUhQwcFXF9fqUuAyTHoY3inH8eKm4GC6f38g9kPSN2/efJ1FKRKJkD/u2OElggheTAHnzgRxD0fuhm04t3Kx0nCr8VMAHyE19xjqykODnZEeBrKVlpa2e71eVFVVmXV1dWmEF0BsTvCOVHCOVPBiEuou3zwGwn+M9KmVmLulYzCR6b3Gh4FY8cpbtWrViZKSkn8nJyfTpCTvbCLYQAQHeJsL1+pbPreI7RS84/Zi5qf1OMSxCjzo9VAQgNTCwsKbZWVlRwH8fdSoUfsIzyMeKSLAX9/4AXjnbmQvO41LJaxXPdYaCEhYunRp+/bt2/cBqMzKyjrJMxDhWTe/qGnqfgDvJTr4Y2Hij/NATrDb7Tmaps0G8K+0tLRZTqdzKyEEjY2NBwH8mb2eaJYDOa7f9wwIxIYSu93+vKZpl1h5z8zMvM2i1NTUtBXANgD+x5YkDhgoiM/Pz/9LVVXVWjZoDRs2LMZxHAKBQCGAdwGEvm0QPB5PRjQa5dn053K55rhcrr91dna+AuBAojkOiWmgEWJfZmeDSWL0TPf5fK3BYPAXAI6wsWFINANN6j7XyyLE6ozd5/NJwWCQJfrJ7wp0bxCeTkSMDV6P1EAH21wfdgvJANIS/yTYkDUk61Fy6N4vZGM+Q7FJ73sBYkAxMaAP2ZX9D68eqVX2NxxzAAAAAElFTkSuQmCC";
+
+    function onMouseEvent( event ) {
+
+        context.drawImage( image, event.clientX - imageWidthHalf, event.clientY - imageHeightHalf );
+
+    }
+
+    function onTouchEvent( event ) {
+
+        event.preventDefault();
+
+        for ( var i = 0; i < event.touches.length; i++ ) {
+
+            context.drawImage( image, event.touches[i].pageX - imageWidthHalf, event.touches[i].pageY - imageHeightHalf );
+
+        }
+
+    }
+
+    function clearCanvas() {
+        context.clearRect(0, 0, canvas.width, canvas.height);
+    }
+
+    canvas.addEventListener("contextmenu", clearCanvas);
+    canvas.addEventListener("click", canvas.closePath());
+</script>
+</body>

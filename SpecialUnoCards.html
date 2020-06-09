@@ -1,357 +1,468 @@
 <head>
-	<style>
-		.top {
-		      font-size: 3vh;
-		      position: fixed;
-          bottom: 0;
-          right: 0;
-		      background-color: white;
-		    }
+
+    <style>
         li {
-          line-break: strict; 
-          font-size: 3vh;
+            line-break: strict;
+            font-size: 3vh;
         }
-	</style>
+
+        hr {
+            border: solid 0.01rem black;
+        }
+
+        @media all and (max-width: 800px) {
+            .divTitle {
+                width: 100%;
+                border: solid 0.1rem black;
+                text-align: center;
+                display: block;
+            }
+
+            .h1Title {
+                font-size: 3vh;
+                border-bottom: solid 0.01rem black;
+                padding: 1rem;
+                margin: 0px;
+            }
+
+            .h1Title2 {
+                font-size: 3vh;
+                border-top: solid 0.01rem black;
+                padding: 1rem;
+                line-break: normal;
+                margin: 0px;
+            }
+
+            h1.random {
+                box-shadow: 0.20rem .20rem .20rem;
+                border-radius: 0.5rem;
+                border: 0.1rem solid black;
+                width: 25rem;
+                height: 7rem;
+            }
+
+            .random {
+                width: 50%;
+                height: 5rem;
+            }
+
+            .top {
+                font-size: 3vh;
+                position: fixed;
+                bottom: 0.5rem;
+                right: 0;
+                background-color: white;
+                width: 50%;
+            }
+        }
+
+        @media all and (min-width: 801px) {
+            .divTitle {
+                width: 100%;
+                border: solid 0.1rem black;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+            }
+
+            .h1Title {
+                font-size: 3vh;
+                padding: 1rem;
+                margin: 0px;
+                width: 50%;
+                text-align: left;
+            }
+
+            .h1Title2 {
+                font-size: 3vh;
+                padding: 1rem;
+                line-break: normal;
+                margin: 0px;
+                width: 50%;
+                text-align: right;
+            }
+
+            .random {
+                box-shadow: 0.25rem .20rem;
+                border-radius: 1rem;
+                border: 0.01rem solid black;
+            }
+        }
+
+        .divRandom {
+            border: dashed;
+            padding-bottom: 25;
+            text-align: center;
+            font-size: 3vh;
+        }
+
+        #number {
+            font-size: 9rem;
+        }
+
+    </style>
 </head>
+<a id="top"></a>
 
 <body>
-	<a href="top"></a>
-	<h1 style="text-align: center; font-size: 3vh;">
-    SPECIAL WILD CARD ROULETTE UNO or SHOWDOWN UNO
-  </h1>
-	<div style="
-      border: dashed;
-      padding-bottom: 25;
-      text-align: center;
-      font-size: 3vh;
-    ">
-		<h1>
-      Your Wild Card Number is:
-      <h1 id="number">Click Button for Random Number</h1>
-		</h1>
-		<button onclick="Random()" style="font-size: 3vh;">Random Card!</button>
-		<br />
-		<p>(Roulette purposes only, unless you can't decide for Showdown)</p>
-		<script>
-			function Random() {
-			        document.getElementById("number").innerHTML =
-			          Math.floor(Math.random() * 98) + 1;
-			      }
-		</script>
-	</div>
-	<div style="text-align: center; font-size: 3vh;">
-		<h1>Jump to Card Number</h1>
-		<select onChange="window.location.href=this.value" style="font-size: 3vh;">
-      <option value="#1">1</option>
-      <option value="#2">2</option>
-      <option value="#3">3</option>
-      <option value="#4">4</option>
-      <option value="#5">5</option>
-      <option value="#6">6</option>
-      <option value="#7">7</option>
-      <option value="#8">8</option>
-      <option value="#9">9</option>
-      <option value="#10">10</option>
-      <option value="#11">11</option>
-      <option value="#12">12</option>
-      <option value="#13">13</option>
-      <option value="#14">14</option>
-      <option value="#15">15</option>
-      <option value="#16">16</option>
-      <option value="#17">17</option>
-      <option value="#18">18</option>
-      <option value="#19">19</option>
-      <option value="#20">20</option>
-      <option value="#21">21</option>
-      <option value="#22">22</option>
-      <option value="#23">23</option>
-      <option value="#24">24</option>
-      <option value="#25">25</option>
-      <option value="#26">26</option>
-      <option value="#27">27</option>
-      <option value="#28">28</option>
-      <option value="#29">29</option>
-      <option value="#30">30</option>
-      <option value="#31">31</option>
-      <option value="#32">32</option>
-      <option value="#33">33</option>
-      <option value="#34">34</option>
-      <option value="#35">35</option>
-      <option value="#36">36</option>
-      <option value="#37">37</option>
-      <option value="#38">38</option>
-      <option value="#39">39</option>
-      <option value="#40">40</option>
-      <option value="#41">41</option>
-      <option value="#42">42</option>
-      <option value="#43">43</option>
-      <option value="#44">44</option>
-      <option value="#45">45</option>
-      <option value="#46">46</option>
-      <option value="#47">47</option>
-      <option value="#48">48</option>
-      <option value="#49">49</option>
-      <option value="#50">50</option>
-      <option value="#51">51</option>
-      <option value="#52">52</option>
-      <option value="#53">53</option>
-      <option value="#54">54</option>
-      <option value="#55">55</option>
-      <option value="#56">56</option>
-      <option value="#57">57</option>
-      <option value="#58">58</option>
-      <option value="#59">59</option>
-      <option value="#60">60</option>
-      <option value="#61">61</option>
-      <option value="#62">62</option>
-      <option value="#63">63</option>
-      <option value="#64">64</option>
-      <option value="#65">65</option>
-      <option value="#66">66</option>
-      <option value="#67">67</option>
-      <option value="#68">68</option>
-      <option value="#69">69</option>
-      <option value="#70">70</option>
-      <option value="#71">71</option>
-      <option value="#72">72</option>
-      <option value="#73">73</option>
-      <option value="#74">74</option>
-      <option value="#75">75</option>
-      <option value="#76">76</option>
-      <option value="#77">77</option>
-      <option value="#78">78</option>
-      <option value="#79">79</option>
-      <option value="#80">80</option>
-      <option value="#81">81</option>
-      <option value="#82">82</option>
-      <option value="#83">83</option>
-      <option value="#84">84</option>
-      <option value="#85">85</option>
-      <option value="#86">86</option>
-      <option value="#87">87</option>
-      <option value="#88">88</option>
-      <option value="#89">89</option>
-      <option value="#90">90</option>
-      <option value="#91">91</option>
-      <option value="#92">92</option>
-      <option value="#93">93</option>
-      <option value="#94">94</option>
-      <option value="#95">95</option>
-      <option value="#96">96</option>
-      <option value="#97">97</option>
-      <option value="#98">98</option>
-      <option value="#99">99</option>
-		</select>
-	</div>
-	<hr /> <button class="top"><a href="#top">Back to Top</a></button>
+    <div class="divTitle">
+        <h1 class="h1Title">
+            SPECIAL WILD CARD ROULETTE UNO
+        </h1>
+        <h1 class="h1Title2">
+            SHOWDOWN UNO
+        </h1>
+    </div>
+    <div class="divRandom">
+        <h1>
+            Your Wild Card Number is:
+            <h1 id="number">Click Button for Random Number</h1>
+        </h1>
+        <button class="random" onclick="Random()" style="font-size: 3vh;">Random Card!</button>
+        <br />
+        <p>(Roulette purposes only, unless you can't decide for Showdown)</p>
+    </div>
+    <div style="text-align: center; font-size: 3vh;">
+        <h1>Jump to Card Number</h1>
+        <select onChange="window.location.href=this.value" style="font-size: 3vh;">
+            <option value="#1">1</option>
+            <option value="#2">2</option>
+            <option value="#3">3</option>
+            <option value="#4">4</option>
+            <option value="#5">5</option>
+            <option value="#6">6</option>
+            <option value="#7">7</option>
+            <option value="#8">8</option>
+            <option value="#9">9</option>
+            <option value="#10">10</option>
+            <option value="#11">11</option>
+            <option value="#12">12</option>
+            <option value="#13">13</option>
+            <option value="#14">14</option>
+            <option value="#15">15</option>
+            <option value="#16">16</option>
+            <option value="#17">17</option>
+            <option value="#18">18</option>
+            <option value="#19">19</option>
+            <option value="#20">20</option>
+            <option value="#21">21</option>
+            <option value="#22">22</option>
+            <option value="#23">23</option>
+            <option value="#24">24</option>
+            <option value="#25">25</option>
+            <option value="#26">26</option>
+            <option value="#27">27</option>
+            <option value="#28">28</option>
+            <option value="#29">29</option>
+            <option value="#30">30</option>
+            <option value="#31">31</option>
+            <option value="#32">32</option>
+            <option value="#33">33</option>
+            <option value="#34">34</option>
+            <option value="#35">35</option>
+            <option value="#36">36</option>
+            <option value="#37">37</option>
+            <option value="#38">38</option>
+            <option value="#39">39</option>
+            <option value="#40">40</option>
+            <option value="#41">41</option>
+            <option value="#42">42</option>
+            <option value="#43">43</option>
+            <option value="#44">44</option>
+            <option value="#45">45</option>
+            <option value="#46">46</option>
+            <option value="#47">47</option>
+            <option value="#48">48</option>
+            <option value="#49">49</option>
+            <option value="#50">50</option>
+            <option value="#51">51</option>
+            <option value="#52">52</option>
+            <option value="#53">53</option>
+            <option value="#54">54</option>
+            <option value="#55">55</option>
+            <option value="#56">56</option>
+            <option value="#57">57</option>
+            <option value="#58">58</option>
+            <option value="#59">59</option>
+            <option value="#60">60</option>
+            <option value="#61">61</option>
+            <option value="#62">62</option>
+            <option value="#63">63</option>
+            <option value="#64">64</option>
+            <option value="#65">65</option>
+            <option value="#66">66</option>
+            <option value="#67">67</option>
+            <option value="#68">68</option>
+            <option value="#69">69</option>
+            <option value="#70">70</option>
+            <option value="#71">71</option>
+            <option value="#72">72</option>
+            <option value="#73">73</option>
+            <option value="#74">74</option>
+            <option value="#75">75</option>
+            <option value="#76">76</option>
+            <option value="#77">77</option>
+            <option value="#78">78</option>
+            <option value="#79">79</option>
+            <option value="#80">80</option>
+            <option value="#81">81</option>
+            <option value="#82">82</option>
+            <option value="#83">83</option>
+            <option value="#84">84</option>
+            <option value="#85">85</option>
+            <option value="#86">86</option>
+            <option value="#87">87</option>
+            <option value="#88">88</option>
+            <option value="#89">89</option>
+            <option value="#90">90</option>
+            <option value="#91">91</option>
+            <option value="#92">92</option>
+            <option value="#93">93</option>
+            <option value="#94">94</option>
+            <option value="#95">95</option>
+            <option value="#96">96</option>
+            <option value="#97">97</option>
+            <option value="#98">98</option>
+            <option value="#99">99</option>
+        </select>
+    </div>
+    <hr /> <button class="top" onclick="backtop()">Back to Top</button>
     <ol>
-      <li id="1">Angry Birds Uno (King Pig Card): Choose a color. All other players must take turns drawing cards until a player draws a card of the selected color. You then choose the color of play.</li><br><br>
-      
-      <li id="2">Barbie Uno (2010) (Fashion Trend Card): Choose a color. Starting with the next player and continuing in the direction of play, each player must show you a card of that color or draw 2 cards. This lasts until one other player draws cards or until all other players show the chosen color.</li><br><br>
-      
-      <li id="3">Barbie Life in the Dreamhouse Uno (BFF Power Card): When a Draw 2 or Draw 4 is played against you, use this card to block the effect. You may then choose the color that resumes play.</li><br><br>
-      
-      <li id="4">Batman Uno (2005) (The Joker's 3 Card): You have a total of 3 cards to make other players draw. You may distribute these cards in any manner (i.e. 3 cards to 1 person; 1 card to 3 people; etc.).</li><br><br>
-      
-      <li id="5">Batman Begins Uno (Justice Card): When this card is played, the player distributes cards from his hand in the direction of play until he only has one card left (don't forget to say "Uno" when you finish). The player then chooses the color of play and play resumes.</li><br><br>
-      
-      <li id="6">Batman: The Dark Knight Uno (The Joker's Wild Card): Choose a player and a color. The chosen player must keep drawing until they draw a card of that color. Once they do, they discard the card they draw. Play then resumes as if the person playing the Wild card had just played the discarded card.</li><br><br>
-      
-      <li id="7">BTS Uno (Dancing Card): Choose a color. The next player must perform a BTS dance routine or draw 3 cards.</li><br><br>
-      
-      <li id="8">Captain Marvel Uno (Cosmic Crush Card): Take all of your cards and put them on the bottom of the Draw pile in any order. Then, draw the same number of cards from the top of the Draw pile, choose a color, and resume play.</li><br><br>
-      
-      <li id="9">Care Bears Uno (Care-A-Lot Card): After this card is played, all players (in play order) get to play any card from their hand, ending with the person who played the Care-A-Lot card. The cards played during this time do not have any effects and do not need to be normally playable on the top card of the discard pile. After all players have discarded a card, the player who played the Care-A-Lot card chooses the color of play.</li><br><br>
-      
-      <li id="10">Cars Uno (Victory Lap Card): All players pass their cards facedown in the direction of play. The person who played the card looks at the cards passed to her and decides whether to keep the cards or pass them. This process continues until the person who played the card keeps the cards in front of her or gets her cards back. She then chooses the color of play.</li><br><br>
-      
-      <li id="11">Cars 2 Uno (Special Agent Mater Card): When you play this card, you may look at every other player's hand.</li><br><br>
-      
-      <li id="12">Cars 3 Uno (Crash Up Card): Combine all of your cards with the next player's cards. Then, shuffle those cards and deal them evenly between that player and yourself.</li><br><br>
-      
-      <li id="13">Chicago White Sox Uno (Manager Card): Call out a card that you want (e.g. Draw 4). You may then trade any card in your hand for that card from any or all players that have it.</li><br><br>
-      
-      <li id="14">Cinderella Uno (Prince Charming Card): When a Draw 2 or Draw 4 is played against you, use this card to make you invincible and block the effect.</li><br><br>
-      
-      <li id="15">Coco (Pixar) Uno (Remember Me Card): When this card is played, the next player must identify the two cards directly underneath this card without looking at them. If the player cannot remember, they draw 3 cards.</li><br><br>
-      
-      <li id="16">DC Super Hero Girls Uno (Save the Day Card): Choose another player. That player is not affected by any penalty cards until another Wild card is played.</li><br><br>
-      
-      <li id="17">Despicable Me Uno (Evil Minion Card): Choose a color. The next player must keep drawing until they draw a card of that color.</li><br><br>
-      
-      <li id="18">Diary of a Wimpy Kid Uno (Cheese Touch Card): All players (including the person who played this card) show the other players all of their yellow cards. Any player with yellow cards must draw 2 cards. The player who played the Cheese Touch Card then chooses the color of play.</li><br><br>
-      
-      <li id="19">Disney Uno (Sorcerer's Apprentice Card): When this card is played, the next player draws 1 card, the following player draws 2 cards (increasing one card as it goes to the next player), until every player except the person who plays this card has drawn cards. The player who played this card then chooses the color of play and play resumes.</li><br><br>
-      
-      <li id="20">Disney Channel Uno (Behind the Scenes Card): Give away all of your cards of one color to the other players by giving a card to each player in a clockwise direction until they have all been distributed. You may then choose the new color of play.</li><br><br>
-      
-      <li id="21">Disney Fairies Uno (Flitterific! Card): When a Draw 2 or Draw 4 is played against you, use this card to block the effect. You may then choose the color that resumes play.</li><br><br>
-      
-      <li id="22">Disney Princess Uno (Classic) (Dragon Card): All other players must discard a 0 or 5 or must draw until they can do so.</li><br><br>
-      
-      <li id="23">Disney Princess Uno (Modern) (Curse Card): Choose a color. All other players must draw cards until they get a card of that color. You then choose the color of play.</li><br><br>
-      
-      <li id="24">Disney Theme Park Uno (Classic) (Evil Card): Use this card at any time during a game to steal the top card from the discard pile. You may then choose a color and play resumes as it was before the Evil card was played.</li><br><br>
-      
-      <li id="25">Doc McStuffins Uno (Stethoscope Card): All other players must show either a 1 or Draw 4 from their hand. All players who cannot do so must draw 2 cards.</li><br><br>
-      
-      <li id="26">Eragon Uno (Zar'Roc Card): Choose a player and look at his cards. You may take any one of his cards and give one of your own to that player. You may then choose the new color of play.</li><br><br>
-      
-      <li id="27">Fast & Furious Uno (Street Race Card): When this card is played, all other players race to slap the top of the discard pile. The last player (whose hand is on top) must draw four cards.</li><br><br>
-      
-      <li id="28">Finding Dory Uno (Just Keep Swimming Card): Once played, the next player must pick up cards from the draw pile until they get a blue card. Then, choose the color of play.</li><br><br>
-      
-      <li id="29">Fraggle Rock Uno (Travel Card): Look at any other player's cards and then choose the color of play.</li><br><br>
-      
-      <li id="30">Frozen Uno (Olaf's Summertime Card): You may discard up to three pink cards or up to three yellow cards.</li><br><br>
-      
-      <li id="31">Frozen 2 Uno (Forces of Nature Card): Choose a color. Until your next turn, only cards of that color can be played, even if a player could otherwise match the number or symbol on the card or play a Wild card.</li><br><br>
-      
-      <li id="32">Ghostbusters Uno (Original) (Crossing the Streams Card): All players (including the player who played this card) must draw a card. Then, you play a card of your choice. All other players must play a card of the same color or draw 2 cards. Then, choose a color and resume play.</li><br><br>
-      
-      <li id="33">Glee Uno (Sabotage Card): Choose a player and look at his cards. You may take any one of his cards and give one of your own to that player. You may then choose the new color of play.</li><br><br>
-      
-      <li id="34">Green Lantern Uno (Power Ring Card): Give away all of your yellow cards to the other players. You may divide them up however you choose. Then, choose the color of play.</li><br><br>
-      
-      <li id="35">Hanna Barbera Uno (PIC-A-NIC Card): Use this card at any time during a game to steal the top card from the discard pile. You may then choose a color and play resumes as it was before the PIC-A-NIC card was played.</li><br><br>
-      
-      <li id="36">Hannah Montana Uno (Best of Both Worlds Card): You may use this card either to make each of the other players draw 1 card or to block a Draw 4 card that is played against you. If you use it to block a Draw 4 card, you still get to take your turn and the color of play is the color that the player who played the Draw 4 card chose.</li><br><br>
-      
-      <li id="37">Harry Potter Uno (2010) (Voldemort Card): Discard all 2s, 6s, and 9s. The last card discarded determines the color of play.</li><br><br>
-      
-      <li id="38">Harry Potter Uno (2018) (Sorting Hat Card): The next player must keep drawing cards until they draw a 1, 2, 3, 4, or 5 card.</li><br><br>
-      
-      <li id="39">Hello Kitty (Hello Kitty Bow Card): All other players must show a red card from their hand. All players who cannot do so must draw 3 cards.</li><br><br>
-      
-      <li id="40">Hello Kitty & Friends Uno (Badtz-Maru Card): When this card is played, the player with the fewest cards must draw 4 cards.</li><br><br>
-      
-      <li id="41">Hi Hi Puffy Amiyumi Uno (Rock-'n'-Swap Card): Choose any two players to swap hands with each other.</li><br><br>
-      
-      <li id="42">High School Musical Uno (Duet Card): When this card is played, all other players must discard a specific pair of cards (0 & 2, 1 & 6, 3 & 5, 4 & 9) or draw 2 cards. Then, choose a color and play resumes.</li><br><br>
-      
-      <li id="43">High School Musical 2 Uno (Sharpay’s Helping Hand Card): Give one card from your hand to any other player.</li><br><br>
-      
-      <li id="44">High School Musical 3 Uno (Graduation Card): All other players must draw 1 card. Then, choose the color that resumes play.</li><br><br>
-      
-      <li id="45">Horses Uno (Horseplay Card): Choose any two players to swap hands with each other.</li><br><br>
-      
-      <li id="46">Incredibles 2 Uno (Screen Slayer Card): When this card is played, all other players must close their eyes and put their cards face down on the playing area. The player who plays this card then takes two cards from one player and gives them to another player. All players can then open their eyes and pick up their cards, and play resumes. Finally, the player playing this card chooses the color of play and play resumes.</li><br><br>
-      
-      <li id="47">Iron Man 2 Uno (War Machine Card): Use this card to block a Draw 2 or Draw 4 card. The person who played the Draw 2 or Draw 4 card against you must draw those cards instead of you.</li><br><br>
-      
-      <li id="48">John Deere Uno (Harvest Card): Choose a player to draw cards until she either draws a green card or draws five cards. If that player draws a green card, she plays it and play then continues. If she does not draw a green card, the player who played the Harvest card chooses the color of play.</li><br><br>
-      
-      <li id="49">Justice League Uno (Superman X-Ray Vision Card): Choose a player and look at her cards. You may take any one of her cards and give one of your own to that player. Then, choose the new color of play.</li><br><br>
-      
-      <li id="50">Kung Fu Panda Uno (Kickin' Battle Card): Choose a player to battle. Both players play a card and the higher card wins (non-number cards are treated as 0s). In the event of a tie, the cards are set aside and both players play another card (if a player runs out of cards during the battle, he draws a card to play). The loser of the battle picks up all battled cards plus 2 cards from the draw pile.</li><br><br>
-      
-      <li id="51">Legend of Zelda Uno (Triforce Card): Choose a color. The next player must play a card of that color with a triforce on it (3, 6, or 9) or draw 3 cards.</li><br><br>
-      
-      <li id="52">Lion King Uno (Circle of Life Card): All players pass one card to the left. Then, choose a color and resume play.</li><br><br>
-      
-      <li id="53">Los Angeles Lakers Uno: Kobe Bryant (Three-Pointer Card): Choose a player. That player must keep drawing cards until they draw a 1, 2, or 3 card.</li><br><br>
-      
-      <li id="54">Macy's Thanksgiving Day Parade Uno (Wishbone Card): Choose a player to "pull the wishbone" with. Both players play a card and the higher number wins (non-number cards are treated as 0s). The loser then draws cards equal to the numerical difference between the two cards. If the Wishbone Card is the only card that you can play after playing a Wishbone Card, you win the round automatically.</li><br><br>
-      
-      <li id="55">Magic Tree House Uno (Fly Away Card): When you play this card, you may look at another player's hand.</li><br><br>
-      
-      <li id="56">Marvel Avengers Uno (2014 Edition) (Avengers Assemble Card): When a Draw 2 or Draw 4 is played against you, use this card to block the effect. You may then choose the color that resumes play.</li><br><br>
-      
-      <li id="57">Marvel Avengers Assemble Uno (S.H.I.E.L.D. Card): When a Draw 4 is played against you, use this card to block the effect. You then choose the color of play and take another turn.</li><br><br>
-      
-      <li id="58">Marvel Heroes Uno (Feats of Fate Card): Trade any card in your hand with a Draw 4 or Draw 2 from the player to your left. If that person does not have either of these cards, move onto the next player. Continue this until you get a Draw 4 or Draw 2 card. If you receive a card, choose the new color and resume play. If you don’t receive a card, you may play a second card. That card determines the color of play.</li><br><br>
-      
-      <li id="59">Marvel Ultimate Spider-Man Web-Warriors Uno (Web Slinger Card): You may give away up to 3 cards of one color from your hand to other players. You may distribute these cards in any manner (i.e. 3 cards to 1 person; 1 card to 3 people; etc.).</li><br><br>
-      
-      <li id="60">Minecraft Uno (Creeper Card): When this card is drawn from the draw pile, you must show it to the other players and then draw 3 additional cards. When played, it functions as a normal Wild card.</li><br><br>
-      
-      <li id="61">Monster High Uno (Creeperific "Urrrhhh" Card): Choose a color. Starting with the player to your left and going clockwise, give a card of that color from your hand to each player until you tun out of cards of that color (players may receive more than one card from you).</li><br><br>
-      
-      <li id="62">My Scene Uno (Casting Call Card): When this card is played, that player turns over cards from the top of the draw pile until she turns over two matching cards. She then may give all the turned over cards to one player or deal them equally to all other players. Then, choose a color and play resumes.</li><br><br>
-      
-      <li id="63">National Parks Uno: Ken Burns (Save The Parks Card): When a Draw 2 or Draw 4 is played against you, use this card to make you invincible and block the effect.</li><br><br>
-      
-      <li id="64">New York Uno (Skip Everyone Card): Skip everyone and take another turn immediately after playing this card.</li><br><br>
-      
-      <li id="65">Nightmare Before Christmas Uno (Oogie Boogie Card): Choose a player to draw cards until he draws cards totaling 11 or higher (only number cards count). The player drawing cards must show all number cards he draws, but may place non-number cards directly in his hand. Once the player draws enough cards, that player places the last card he drew on the top of the discard pile. The player who played the Oogie Boogie card then chooses the color of play.</li><br><br>
-      
-      <li id="66">Nintendo Uno (Power Card): When a Draw 2 or Draw 4 is played against you, use this card to make you invincible and block the effect.</li><br><br>
-      
-      <li id="67">Over the Hedge Uno (Trap Card): Choose a color. All other players must draw cards until they get a card of that color. The chosen color is the new color of play.</li><br><br>
-      
-      <li id="68">Peanuts Movie Uno (Man's Best Friend Card): Discard up to 3 Charlie Brown or Snoopy cards (1, 2, 3, 5, Skip, Reverse, Draw 2, Draw 4, Wild). Then choose another player to discard 1 Charlie Brown or Snoopy card. After this, choose the color of play and resume play.</li><br><br>
-      
-      <li id="69">Penguins of Madagascar Uno (Dr. Blowhole’s Revenge Card): You have a total of 4 cards to make other players draw. You may distribute these cards in any manner (i.e. 4 cards to 1 person; 2 cards to 2 people; etc.).</li><br><br>
-      
-      <li id="70">Phineas and Ferb Uno (Agent P Card): When a Draw 2 or Draw 4 is played against you, use this card and the person who played the Draw 2 or Draw 4 has to draw those cards instead.</li><br><br>
-      
-      <li id="71">Pirates of the Caribbean Uno (Dead Men Tell No Tales Card): When you choose a color, all other players must draw until they get a card of that color.</li><br><br>
-      
-      <li id="72">Planes Uno (Altimeter Alert Card): When this card is played, choose a color. All players (including the one who played this card) choose a card of that color from their hand. The players simultaneously reveal their cards. The player with the highest unique card (if another player plays the same card as another player, they cancel each other out) gets to discard that card. Play then resumes with the chosen color.</li><br><br>
-      <li id="73">Planes Uno (Franz Card): When a Draw 4 is played against you, use this card to block the effect. You then choose the color of play and take another turn.</li><br><br>
-      
-      <li id="74">Planes: Fire and Rescue Uno (Water Drop Card): Discard all of your blue cards. Then, choose a color and play resumes.</li><br><br>
-      
-      <li id="75">Pokemon Uno (Trainer Card): You have the option to trade all of your cards for all of an opponent's cards. Whether you trade or not, you also choose the color of play.</li><br><br>
-      
-      <li id="76">Ratatouille Uno (Recipe for Chaos Card): Call out a number. All other players must discard a card of that number or draw 3 cards.</li><br><br>
-      
-      <li id="77">Ryan's World Uno (Ryan's Review Card): Look at every other player's hand and exchange one of their cards with one of your own.</li><br><br>
-      
-      <li id="78">Sesame Street Uno (Grouch Card): You may give away up to three cards from your hand to other players. You may distribute these cards in any manner (i.e. 3 cards to 1 person; 1 card to 3 people; etc.). If you fail to say "Uno" while distributing the cards (if you get down to one card or fewer), you must take back the distributed cards and draw 2 additional cards.</li><br><br>
-      
-      <li id="79">Shark Week Uno (Shark Attack Card): When this card is played, all players race to put their hand on the discard pile. The last player to do so must draw 4 cards. Then, choose a color and play resumes.</li><br><br>
-      
-      <li id="80">Shrek Uno (Merlin Card): When you choose a color, all other players must draw until they get a card of that color.</li><br><br>
-      
-      <li id="81">Sock Monkey Uno (Hat Card): Every other player must show a red card or draw 3 cards.</li><br><br>
-      
-      <li id="82">Sofia the First Uno (Cute 'n' Cuddly Card): When a Draw 4 is played against you, use this card to block the effect. You then choose the color of play and take another turn.</li><br><br>
-      
-      <li id="83">Speed Racer Uno (Racer X Card): Flip cards over from the top of the draw pile until a number card is revealed. The next player must play a card from his hand that is one number higher than the revealed card (e.g. a 5 on top of a 4). When the pile shows a 9, the next player must play a 0 card. Players continue playing cards in this manner until a player cannot play the required card. That player must then draw 3 cards.</li><br><br>
-      
-      <li id="84">Spider-Man Spider Sense Uno (Spider Sense Card): All other players must show either a 9 or Special Wild Card from their hand. All players who cannot do so must draw 2 cards.</li><br><br>
-      
-      <li id="85">SpongeBob Squarepants Uno (Secret Recipe Card): Look at any other player's cards and then choose the color of play.</li><br><br>
-      
-      <li id="86">Super Mario Uno (Super Star Card): When another player plays a Draw 2 or Draw 4 Card against you, use this card to make them draw the cards instead. The player using this card then chooses a color and play continues.</li><br><br>
-      
-      <li id="87">Superman Returns Uno (Kryptonite Card): All other players must immediately play a green or Wild card or draw 3 cards. The person who played the card then chooses the color and play resumes.</li><br><br>
-      
-      <li id="88">Teenage Mutant Ninja Turtles Uno (Pizza Card): The next player must keep drawing cards until they draw a 3, 5, 7, or 9 card. That player also loses their turn.</li><br><br>
-      
-      <li id="89">Teen Titans Go! Uno (Robin's Rule Card): Choose another player. That player gets to discard all of their pink (red) cards. Then, choose the color of play.</li><br><br>
-      
-      <li id="90">Texas Uno (Last Stand Card): You may use this card at any time during the game to switch hands with any player who only has one card left. The player using this card then chooses a color and play resumes where it was before the Last Stand card was played.</li><br><br>
-      
-      <li id="91">Toy Story Uno (2008) (The Claw Card): The next player draws cards until she gets a 1, 2, 3, 4, or 5 card. She also loses her turn.</li><br><br>
-      
-      <li id="92">Toy Story 3 Uno (Lotso Card): Choose a color. All other players must show you a card of that color or draw 3 cards. If all players have a card of that color, you must draw 3 cards. The color chosen becomes the color that continues play.</li><br><br>
-      
-      <li id="93">Toy Story 4 Uno (Duke Caboom Card): Choose two players. Take all of their cards, shuffle them together, and deal them back equally to those two players. If there are an odd number of cards, you decide who gets the extra card. Then, choose the color of play.</li><br><br>
-      
-      <li id="94">Uno Express (Wild Draw 2 Card): The next player must draw 2 cards. This card can only be played when the player cannot play a card that matches the color on the discard pile (number and symbol matches are okay).</li><br><br>
-      
-      <li id="95">Uno H2O (Wild Downpour Card): All other players must draw 2 cards.</li><br><br>
-      
-      <li id="96">Uno Mod (Mod Card): Choose a color. Then, give away one card to each other player of that chosen color in clockwise order until all other players receive a card or you run out of cards of the chosen color.</li><br><br>
-      
-      <li id="97">Unocorns Uno (Narwhal Card): All players must draw a card and hold it to their forehead facing the other players. On their next turn, they must correctly guess the color of the card to discard it (Wild cards count as any color). Otherwise, their turn ends and they must try to guess again next turn.</li><br><br>
-      
-      <li id="98">Wellie Wishers Uno (Kindness Card): Choose a color. All players get to discard one card of that color. That color is also the color of play.</li><br><br>
-      
-      <li id="99">WWE Uno (Locked Up Card): Choose a player to battle. Both players play a number card and the higher card wins. The loser of the battle picks up both cards. In the event of a tie, both players take back the card they played. Then, choose a color and play resumes.</li>
-      </ol>
-	<hr />
-	<div style="text-align: center;">
-		<p style="font-size: 3vh; text-align: center;">If you need help with the rules of Special Wild Card Roulette Uno or Showdown Uno...</p>
-		<br /> <a href="https://unovariations.blogspot.com/2011/09/uno-variation-special-card-roulette.html" style="font-size: 3vh; text-align: center;">Special Wild Card Roulette Uno</a
-    >
-    <br />
-    <a
-      href="https://unovariations.blogspot.com/2011/08/uno-variation-special-card-showdown.html"
-      style="font-size: 3vh; text-align: center;"
-      >Showdown Uno</a
-    >
-  </div>
+        <li id="1">Angry Birds Uno (King Pig Card): Choose a color. All other players must take turns drawing cards until a player draws a card of the selected color. You then choose the color of play.</li><br><br>
+
+        <li id="2">Barbie Uno (2010) (Fashion Trend Card): Choose a color. Starting with the next player and continuing in the direction of play, each player must show you a card of that color or draw 2 cards. This lasts until one other player draws cards or until all other players show the chosen color.</li><br><br>
+
+        <li id="3">Barbie Life in the Dreamhouse Uno (BFF Power Card): When a Draw 2 or Draw 4 is played against you, use this card to block the effect. You may then choose the color that resumes play.</li><br><br>
+
+        <li id="4">Batman Uno (2005) (The Joker's 3 Card): You have a total of 3 cards to make other players draw. You may distribute these cards in any manner (i.e. 3 cards to 1 person; 1 card to 3 people; etc.).</li><br><br>
+
+        <li id="5">Batman Begins Uno (Justice Card): When this card is played, the player distributes cards from his hand in the direction of play until he only has one card left (don't forget to say "Uno" when you finish). The player then chooses the color of play and play resumes.</li><br><br>
+
+        <li id="6">Batman: The Dark Knight Uno (The Joker's Wild Card): Choose a player and a color. The chosen player must keep drawing until they draw a card of that color. Once they do, they discard the card they draw. Play then resumes as if the person playing the Wild card had just played the discarded card.</li><br><br>
+
+        <li id="7">BTS Uno (Dancing Card): Choose a color. The next player must perform a BTS dance routine or draw 3 cards.</li><br><br>
+
+        <li id="8">Captain Marvel Uno (Cosmic Crush Card): Take all of your cards and put them on the bottom of the Draw pile in any order. Then, draw the same number of cards from the top of the Draw pile, choose a color, and resume play.</li><br><br>
+
+        <li id="9">Care Bears Uno (Care-A-Lot Card): After this card is played, all players (in play order) get to play any card from their hand, ending with the person who played the Care-A-Lot card. The cards played during this time do not have any effects and do not need to be normally playable on the top card of the discard pile. After all players have discarded a card, the player who played the Care-A-Lot card chooses the color of play.</li><br><br>
+
+        <li id="10">Cars Uno (Victory Lap Card): All players pass their cards facedown in the direction of play. The person who played the card looks at the cards passed to her and decides whether to keep the cards or pass them. This process continues until the person who played the card keeps the cards in front of her or gets her cards back. She then chooses the color of play.</li><br><br>
+
+        <li id="11">Cars 2 Uno (Special Agent Mater Card): When you play this card, you may look at every other player's hand.</li><br><br>
+
+        <li id="12">Cars 3 Uno (Crash Up Card): Combine all of your cards with the next player's cards. Then, shuffle those cards and deal them evenly between that player and yourself.</li><br><br>
+
+        <li id="13">Chicago White Sox Uno (Manager Card): Call out a card that you want (e.g. Draw 4). You may then trade any card in your hand for that card from any or all players that have it.</li><br><br>
+
+        <li id="14">Cinderella Uno (Prince Charming Card): When a Draw 2 or Draw 4 is played against you, use this card to make you invincible and block the effect.</li><br><br>
+
+        <li id="15">Coco (Pixar) Uno (Remember Me Card): When this card is played, the next player must identify the two cards directly underneath this card without looking at them. If the player cannot remember, they draw 3 cards.</li><br><br>
+
+        <li id="16">DC Super Hero Girls Uno (Save the Day Card): Choose another player. That player is not affected by any penalty cards until another Wild card is played.</li><br><br>
+
+        <li id="17">Despicable Me Uno (Evil Minion Card): Choose a color. The next player must keep drawing until they draw a card of that color.</li><br><br>
+
+        <li id="18">Diary of a Wimpy Kid Uno (Cheese Touch Card): All players (including the person who played this card) show the other players all of their yellow cards. Any player with yellow cards must draw 2 cards. The player who played the Cheese Touch Card then chooses the color of play.</li><br><br>
+
+        <li id="19">Disney Uno (Sorcerer's Apprentice Card): When this card is played, the next player draws 1 card, the following player draws 2 cards (increasing one card as it goes to the next player), until every player except the person who plays this card has drawn cards. The player who played this card then chooses the color of play and play resumes.</li><br><br>
+
+        <li id="20">Disney Channel Uno (Behind the Scenes Card): Give away all of your cards of one color to the other players by giving a card to each player in a clockwise direction until they have all been distributed. You may then choose the new color of play.</li><br><br>
+
+        <li id="21">Disney Fairies Uno (Flitterific! Card): When a Draw 2 or Draw 4 is played against you, use this card to block the effect. You may then choose the color that resumes play.</li><br><br>
+
+        <li id="22">Disney Princess Uno (Classic) (Dragon Card): All other players must discard a 0 or 5 or must draw until they can do so.</li><br><br>
+
+        <li id="23">Disney Princess Uno (Modern) (Curse Card): Choose a color. All other players must draw cards until they get a card of that color. You then choose the color of play.</li><br><br>
+
+        <li id="24">Disney Theme Park Uno (Classic) (Evil Card): Use this card at any time during a game to steal the top card from the discard pile. You may then choose a color and play resumes as it was before the Evil card was played.</li><br><br>
+
+        <li id="25">Doc McStuffins Uno (Stethoscope Card): All other players must show either a 1 or Draw 4 from their hand. All players who cannot do so must draw 2 cards.</li><br><br>
+
+        <li id="26">Eragon Uno (Zar'Roc Card): Choose a player and look at his cards. You may take any one of his cards and give one of your own to that player. You may then choose the new color of play.</li><br><br>
+
+        <li id="27">Fast & Furious Uno (Street Race Card): When this card is played, all other players race to slap the top of the discard pile. The last player (whose hand is on top) must draw four cards.</li><br><br>
+
+        <li id="28">Finding Dory Uno (Just Keep Swimming Card): Once played, the next player must pick up cards from the draw pile until they get a blue card. Then, choose the color of play.</li><br><br>
+
+        <li id="29">Fraggle Rock Uno (Travel Card): Look at any other player's cards and then choose the color of play.</li><br><br>
+
+        <li id="30">Frozen Uno (Olaf's Summertime Card): You may discard up to three pink cards or up to three yellow cards.</li><br><br>
+
+        <li id="31">Frozen 2 Uno (Forces of Nature Card): Choose a color. Until your next turn, only cards of that color can be played, even if a player could otherwise match the number or symbol on the card or play a Wild card.</li><br><br>
+
+        <li id="32">Ghostbusters Uno (Original) (Crossing the Streams Card): All players (including the player who played this card) must draw a card. Then, you play a card of your choice. All other players must play a card of the same color or draw 2 cards. Then, choose a color and resume play.</li><br><br>
+
+        <li id="33">Glee Uno (Sabotage Card): Choose a player and look at his cards. You may take any one of his cards and give one of your own to that player. You may then choose the new color of play.</li><br><br>
+
+        <li id="34">Green Lantern Uno (Power Ring Card): Give away all of your yellow cards to the other players. You may divide them up however you choose. Then, choose the color of play.</li><br><br>
+
+        <li id="35">Hanna Barbera Uno (PIC-A-NIC Card): Use this card at any time during a game to steal the top card from the discard pile. You may then choose a color and play resumes as it was before the PIC-A-NIC card was played.</li><br><br>
+
+        <li id="36">Hannah Montana Uno (Best of Both Worlds Card): You may use this card either to make each of the other players draw 1 card or to block a Draw 4 card that is played against you. If you use it to block a Draw 4 card, you still get to take your turn and the color of play is the color that the player who played the Draw 4 card chose.</li><br><br>
+
+        <li id="37">Harry Potter Uno (2010) (Voldemort Card): Discard all 2s, 6s, and 9s. The last card discarded determines the color of play.</li><br><br>
+
+        <li id="38">Harry Potter Uno (2018) (Sorting Hat Card): The next player must keep drawing cards until they draw a 1, 2, 3, 4, or 5 card.</li><br><br>
+
+        <li id="39">Hello Kitty (Hello Kitty Bow Card): All other players must show a red card from their hand. All players who cannot do so must draw 3 cards.</li><br><br>
+
+        <li id="40">Hello Kitty & Friends Uno (Badtz-Maru Card): When this card is played, the player with the fewest cards must draw 4 cards.</li><br><br>
+
+        <li id="41">Hi Hi Puffy Amiyumi Uno (Rock-'n'-Swap Card): Choose any two players to swap hands with each other.</li><br><br>
+
+        <li id="42">High School Musical Uno (Duet Card): When this card is played, all other players must discard a specific pair of cards (0 & 2, 1 & 6, 3 & 5, 4 & 9) or draw 2 cards. Then, choose a color and play resumes.</li><br><br>
+
+        <li id="43">High School Musical 2 Uno (Sharpay’s Helping Hand Card): Give one card from your hand to any other player.</li><br><br>
+
+        <li id="44">High School Musical 3 Uno (Graduation Card): All other players must draw 1 card. Then, choose the color that resumes play.</li><br><br>
+
+        <li id="45">Horses Uno (Horseplay Card): Choose any two players to swap hands with each other.</li><br><br>
+
+        <li id="46">Incredibles 2 Uno (Screen Slayer Card): When this card is played, all other players must close their eyes and put their cards face down on the playing area. The player who plays this card then takes two cards from one player and gives them to another player. All players can then open their eyes and pick up their cards, and play resumes. Finally, the player playing this card chooses the color of play and play resumes.</li><br><br>
+
+        <li id="47">Iron Man 2 Uno (War Machine Card): Use this card to block a Draw 2 or Draw 4 card. The person who played the Draw 2 or Draw 4 card against you must draw those cards instead of you.</li><br><br>
+
+        <li id="48">John Deere Uno (Harvest Card): Choose a player to draw cards until she either draws a green card or draws five cards. If that player draws a green card, she plays it and play then continues. If she does not draw a green card, the player who played the Harvest card chooses the color of play.</li><br><br>
+
+        <li id="49">Justice League Uno (Superman X-Ray Vision Card): Choose a player and look at her cards. You may take any one of her cards and give one of your own to that player. Then, choose the new color of play.</li><br><br>
+
+        <li id="50">Kung Fu Panda Uno (Kickin' Battle Card): Choose a player to battle. Both players play a card and the higher card wins (non-number cards are treated as 0s). In the event of a tie, the cards are set aside and both players play another card (if a player runs out of cards during the battle, he draws a card to play). The loser of the battle picks up all battled cards plus 2 cards from the draw pile.</li><br><br>
+
+        <li id="51">Legend of Zelda Uno (Triforce Card): Choose a color. The next player must play a card of that color with a triforce on it (3, 6, or 9) or draw 3 cards.</li><br><br>
+
+        <li id="52">Lion King Uno (Circle of Life Card): All players pass one card to the left. Then, choose a color and resume play.</li><br><br>
+
+        <li id="53">Los Angeles Lakers Uno: Kobe Bryant (Three-Pointer Card): Choose a player. That player must keep drawing cards until they draw a 1, 2, or 3 card.</li><br><br>
+
+        <li id="54">Macy's Thanksgiving Day Parade Uno (Wishbone Card): Choose a player to "pull the wishbone" with. Both players play a card and the higher number wins (non-number cards are treated as 0s). The loser then draws cards equal to the numerical difference between the two cards. If the Wishbone Card is the only card that you can play after playing a Wishbone Card, you win the round automatically.</li><br><br>
+
+        <li id="55">Magic Tree House Uno (Fly Away Card): When you play this card, you may look at another player's hand.</li><br><br>
+
+        <li id="56">Marvel Avengers Uno (2014 Edition) (Avengers Assemble Card): When a Draw 2 or Draw 4 is played against you, use this card to block the effect. You may then choose the color that resumes play.</li><br><br>
+
+        <li id="57">Marvel Avengers Assemble Uno (S.H.I.E.L.D. Card): When a Draw 4 is played against you, use this card to block the effect. You then choose the color of play and take another turn.</li><br><br>
+
+        <li id="58">Marvel Heroes Uno (Feats of Fate Card): Trade any card in your hand with a Draw 4 or Draw 2 from the player to your left. If that person does not have either of these cards, move onto the next player. Continue this until you get a Draw 4 or Draw 2 card. If you receive a card, choose the new color and resume play. If you don’t receive a card, you may play a second card. That card determines the color of play.</li><br><br>
+
+        <li id="59">Marvel Ultimate Spider-Man Web-Warriors Uno (Web Slinger Card): You may give away up to 3 cards of one color from your hand to other players. You may distribute these cards in any manner (i.e. 3 cards to 1 person; 1 card to 3 people; etc.).</li><br><br>
+
+        <li id="60">Minecraft Uno (Creeper Card): When this card is drawn from the draw pile, you must show it to the other players and then draw 3 additional cards. When played, it functions as a normal Wild card.</li><br><br>
+
+        <li id="61">Monster High Uno (Creeperific "Urrrhhh" Card): Choose a color. Starting with the player to your left and going clockwise, give a card of that color from your hand to each player until you tun out of cards of that color (players may receive more than one card from you).</li><br><br>
+
+        <li id="62">My Scene Uno (Casting Call Card): When this card is played, that player turns over cards from the top of the draw pile until she turns over two matching cards. She then may give all the turned over cards to one player or deal them equally to all other players. Then, choose a color and play resumes.</li><br><br>
+
+        <li id="63">National Parks Uno: Ken Burns (Save The Parks Card): When a Draw 2 or Draw 4 is played against you, use this card to make you invincible and block the effect.</li><br><br>
+
+        <li id="64">New York Uno (Skip Everyone Card): Skip everyone and take another turn immediately after playing this card.</li><br><br>
+
+        <li id="65">Nightmare Before Christmas Uno (Oogie Boogie Card): Choose a player to draw cards until he draws cards totaling 11 or higher (only number cards count). The player drawing cards must show all number cards he draws, but may place non-number cards directly in his hand. Once the player draws enough cards, that player places the last card he drew on the top of the discard pile. The player who played the Oogie Boogie card then chooses the color of play.</li><br><br>
+
+        <li id="66">Nintendo Uno (Power Card): When a Draw 2 or Draw 4 is played against you, use this card to make you invincible and block the effect.</li><br><br>
+
+        <li id="67">Over the Hedge Uno (Trap Card): Choose a color. All other players must draw cards until they get a card of that color. The chosen color is the new color of play.</li><br><br>
+
+        <li id="68">Peanuts Movie Uno (Man's Best Friend Card): Discard up to 3 Charlie Brown or Snoopy cards (1, 2, 3, 5, Skip, Reverse, Draw 2, Draw 4, Wild). Then choose another player to discard 1 Charlie Brown or Snoopy card. After this, choose the color of play and resume play.</li><br><br>
+
+        <li id="69">Penguins of Madagascar Uno (Dr. Blowhole’s Revenge Card): You have a total of 4 cards to make other players draw. You may distribute these cards in any manner (i.e. 4 cards to 1 person; 2 cards to 2 people; etc.).</li><br><br>
+
+        <li id="70">Phineas and Ferb Uno (Agent P Card): When a Draw 2 or Draw 4 is played against you, use this card and the person who played the Draw 2 or Draw 4 has to draw those cards instead.</li><br><br>
+
+        <li id="71">Pirates of the Caribbean Uno (Dead Men Tell No Tales Card): When you choose a color, all other players must draw until they get a card of that color.</li><br><br>
+
+        <li id="72">Planes Uno (Altimeter Alert Card): When this card is played, choose a color. All players (including the one who played this card) choose a card of that color from their hand. The players simultaneously reveal their cards. The player with the highest unique card (if another player plays the same card as another player, they cancel each other out) gets to discard that card. Play then resumes with the chosen color.</li><br><br>
+
+        <li id="73">Planes Uno (Franz Card): When a Draw 4 is played against you, use this card to block the effect. You then choose the color of play and take another turn.</li><br><br>
+
+        <li id="74">Planes: Fire and Rescue Uno (Water Drop Card): Discard all of your blue cards. Then, choose a color and play resumes.</li><br><br>
+
+        <li id="75">Pokemon Uno (Trainer Card): You have the option to trade all of your cards for all of an opponent's cards. Whether you trade or not, you also choose the color of play.</li><br><br>
+
+        <li id="76">Ratatouille Uno (Recipe for Chaos Card): Call out a number. All other players must discard a card of that number or draw 3 cards.</li><br><br>
+
+        <li id="77">Ryan's World Uno (Ryan's Review Card): Look at every other player's hand and exchange one of their cards with one of your own.</li><br><br>
+
+        <li id="78">Sesame Street Uno (Grouch Card): You may give away up to three cards from your hand to other players. You may distribute these cards in any manner (i.e. 3 cards to 1 person; 1 card to 3 people; etc.). If you fail to say "Uno" while distributing the cards (if you get down to one card or fewer), you must take back the distributed cards and draw 2 additional cards.</li><br><br>
+
+        <li id="79">Shark Week Uno (Shark Attack Card): When this card is played, all players race to put their hand on the discard pile. The last player to do so must draw 4 cards. Then, choose a color and play resumes.</li><br><br>
+
+        <li id="80">Shrek Uno (Merlin Card): When you choose a color, all other players must draw until they get a card of that color.</li><br><br>
+
+        <li id="81">Sock Monkey Uno (Hat Card): Every other player must show a red card or draw 3 cards.</li><br><br>
+
+        <li id="82">Sofia the First Uno (Cute 'n' Cuddly Card): When a Draw 4 is played against you, use this card to block the effect. You then choose the color of play and take another turn.</li><br><br>
+
+        <li id="83">Speed Racer Uno (Racer X Card): Flip cards over from the top of the draw pile until a number card is revealed. The next player must play a card from his hand that is one number higher than the revealed card (e.g. a 5 on top of a 4). When the pile shows a 9, the next player must play a 0 card. Players continue playing cards in this manner until a player cannot play the required card. That player must then draw 3 cards.</li><br><br>
+
+        <li id="84">Spider-Man Spider Sense Uno (Spider Sense Card): All other players must show either a 9 or Special Wild Card from their hand. All players who cannot do so must draw 2 cards.</li><br><br>
+
+        <li id="85">SpongeBob Squarepants Uno (Secret Recipe Card): Look at any other player's cards and then choose the color of play.</li><br><br>
+
+        <li id="86">Super Mario Uno (Super Star Card): When another player plays a Draw 2 or Draw 4 Card against you, use this card to make them draw the cards instead. The player using this card then chooses a color and play continues.</li><br><br>
+
+        <li id="87">Superman Returns Uno (Kryptonite Card): All other players must immediately play a green or Wild card or draw 3 cards. The person who played the card then chooses the color and play resumes.</li><br><br>
+
+        <li id="88">Teenage Mutant Ninja Turtles Uno (Pizza Card): The next player must keep drawing cards until they draw a 3, 5, 7, or 9 card. That player also loses their turn.</li><br><br>
+
+        <li id="89">Teen Titans Go! Uno (Robin's Rule Card): Choose another player. That player gets to discard all of their pink (red) cards. Then, choose the color of play.</li><br><br>
+
+        <li id="90">Texas Uno (Last Stand Card): You may use this card at any time during the game to switch hands with any player who only has one card left. The player using this card then chooses a color and play resumes where it was before the Last Stand card was played.</li><br><br>
+
+        <li id="91">Toy Story Uno (2008) (The Claw Card): The next player draws cards until she gets a 1, 2, 3, 4, or 5 card. She also loses her turn.</li><br><br>
+
+        <li id="92">Toy Story 3 Uno (Lotso Card): Choose a color. All other players must show you a card of that color or draw 3 cards. If all players have a card of that color, you must draw 3 cards. The color chosen becomes the color that continues play.</li><br><br>
+
+        <li id="93">Toy Story 4 Uno (Duke Caboom Card): Choose two players. Take all of their cards, shuffle them together, and deal them back equally to those two players. If there are an odd number of cards, you decide who gets the extra card. Then, choose the color of play.</li><br><br>
+
+        <li id="94">Uno Express (Wild Draw 2 Card): The next player must draw 2 cards. This card can only be played when the player cannot play a card that matches the color on the discard pile (number and symbol matches are okay).</li><br><br>
+
+        <li id="95">Uno H2O (Wild Downpour Card): All other players must draw 2 cards.</li><br><br>
+
+        <li id="96">Uno Mod (Mod Card): Choose a color. Then, give away one card to each other player of that chosen color in clockwise order until all other players receive a card or you run out of cards of the chosen color.</li><br><br>
+
+        <li id="97">Unocorns Uno (Narwhal Card): All players must draw a card and hold it to their forehead facing the other players. On their next turn, they must correctly guess the color of the card to discard it (Wild cards count as any color). Otherwise, their turn ends and they must try to guess again next turn.</li><br><br>
+
+        <li id="98">Wellie Wishers Uno (Kindness Card): Choose a color. All players get to discard one card of that color. That color is also the color of play.</li><br><br>
+
+        <li id="99">WWE Uno (Locked Up Card): Choose a player to battle. Both players play a number card and the higher card wins. The loser of the battle picks up both cards. In the event of a tie, both players take back the card they played. Then, choose a color and play resumes.</li>
+    </ol>
+    <hr />
+    <div style="text-align: center;">
+        <p style="font-size: 3vh; text-align: center;">If you need help with the rules of Special Wild Card Roulette Uno or Showdown Uno...</p>
+        <br /> <a href="https://unovariations.blogspot.com/2011/09/uno-variation-special-card-roulette.html" style="font-size: 3vh; text-align: center;">Special Wild Card Roulette Uno</a>
+        <br />
+        <a href="https://unovariations.blogspot.com/2011/08/uno-variation-special-card-showdown.html" style="font-size: 3vh; text-align: center;">Showdown Uno</a>
+    </div>
 </body>
+
+<script>
+    const clicktext = document.getElementById('number');
+
+    function Random() {
+        document.getElementById("number").innerHTML =
+            Math.floor(Math.random() * 98) + 1;
+
+        if (clicktext.textContent == 'Click Button for Random Number') {
+            clicktext.style.fontSize = '5rem';
+        } else {
+            clicktext.style.fontSize = '9rem';
+        }
+        document.getElementById(clicktext.textContent).scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
+
+    if (clicktext.textContent == 'Click Button for Random Number') {
+        clicktext.style.fontSize = '5rem';
+    } else {
+        clicktext.style.fontSize = '9rem';
+    }
+
+    function backtop() {
+        document.getElementById("top").scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
+
+</script>
