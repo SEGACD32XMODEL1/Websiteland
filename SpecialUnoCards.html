@@ -10,7 +10,9 @@
             border: solid 0.01rem black;
         }
 
-        @media all and (max-width: 800px) {
+        @media all and (max-width: 1002px),
+                       (hover:none),
+                       (hover:on-demand){
             .divTitle {
                 width: 100%;
                 border: solid 0.1rem black;
@@ -52,11 +54,12 @@
                 bottom: 0.5rem;
                 right: 0;
                 background-color: white;
-                width: 50%;
+                width: 25rem;
+                height: 5rem;
             }
         }
 
-        @media all and (min-width: 801px) {
+        @media all and (min-width: 1003px) {
             .divTitle {
                 width: 100%;
                 border: solid 0.1rem black;
@@ -72,6 +75,7 @@
                 margin: 0px;
                 width: 50%;
                 text-align: left;
+                border: 0;
             }
 
             .h1Title2 {
@@ -81,12 +85,22 @@
                 margin: 0px;
                 width: 50%;
                 text-align: right;
+                border: 0;
             }
 
             .random {
                 box-shadow: 0.25rem .20rem;
                 border-radius: 1rem;
                 border: 0.01rem solid black;
+            }
+            .top {
+                font-size: 3vh;
+                position: fixed;
+                bottom: 0.5rem;
+                right: 0;
+                background-color: white;
+                width: 10rem;
+                height: 3rem;
             }
         }
 
