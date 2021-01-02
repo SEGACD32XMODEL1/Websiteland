@@ -108,3 +108,13 @@
   font-family: "Pulse";
   src: url("ThePulse.ttf") format("truetype");
 }
+
+@font-face {
+  font-family: "lem";
+  src: url("Lemonada-Roman-VF.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "mia";
+    src: url("Miami-143.otf") format("opentype");    
+}

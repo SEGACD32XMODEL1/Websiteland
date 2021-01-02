@@ -1,0 +1,40 @@
+.title {
+    color: black;
+}
+
+video {
+    min-width: 250px;
+    min-height: 200px;
+    object-fit: fill;
+    width: 100;
+    max-height: 1000px;
+    max-width: 1000px;
+}
+
+.background {
+    display: grid;
+    grid-gap: 0em;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    text-align: center;
+    z-index: -1;
+    padding: 0em;
+}
+
+.container {
+    position: absolute;
+    bottom: 750px;
+    width: 98%;
+    z-index: 1;
+}
+
+.mainwrap {
+    width: 90%;
+}
+
+.bvid {
+    object-fit: fill;
+}
+
+.center {
+    position: relative;
+}
