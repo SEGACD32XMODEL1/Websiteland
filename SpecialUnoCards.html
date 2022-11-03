@@ -455,6 +455,7 @@
 
     function Random() {
         let deck = document.querySelectorAll('li');
+        deck.style.backgroundColor="#FFF";
         let card = Math.random()*deck.length<<0;
         document.querySelector("#number").innerHTML=card--;
         deck[card].scrollIntoView({behavior:'smooth'});
